@@ -53,8 +53,6 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
-
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -165,22 +163,22 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="cgi-student.html" class="menu-link">
                     <div data-i18n="Accordion">CGI 훈련생</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="campus-student.html" class="menu-link">
                     <div data-i18n="Accordion">캠퍼스 훈련생</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="branch-student.html" class="menu-link">
                     <div data-i18n="Accordion">분원 훈련생</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="AI-student.html" class="menu-link">
                     <div data-i18n="Accordion">인공지능사관학교 훈련생</div>
                   </a>
                 </li>
@@ -190,7 +188,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-badges.html" class="menu-link">
+                  <a href="statistic.html" class="menu-link">
                     <div data-i18n="Badges">훈련생 통계</div>
                   </a>
                 </li>
@@ -207,12 +205,12 @@
               </a>
               <!-- 협약기업 하위메뉴 -->
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="forms-basic-inputs.html" class="menu-link">
                     <div data-i18n="Basic Inputs">협약기업 요약</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="forms-input-groups.html" class="menu-link">
                     <div data-i18n="Input groups">협약기업 관리</div>
                   </a>
@@ -303,78 +301,7 @@
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
-                  <a
-                    class="github-button"
-                    href="https://github.com/themeselection/sneat-html-admin-template-free"
-                    data-icon="octicon-star"
-                    data-size="large"
-                    data-show-count="true"
-                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-                    >Star</a
-                  >
-                </li>
-
-                <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Settings</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!--/ User -->
+        
               </ul>
             </div>
           </nav>
@@ -386,133 +313,235 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <!-- Style variation -->
-              <h5 class="pb-1 mb-4">협약기업 요약</h5>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">협약기업관리/</span> 협약기업 상세 페이지</h4>
               <div class="row">
-
-                  <!--/ Order Statistics -->
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card bg-primary text-white mb-3">
-                      <div class="card-header">2022 협약기업</div>
-                      <div class="card-body">
-                        <h5 class="card-title text-white">현재 협약 기업 수</h5>
-                        <p class="card-text">102곳</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card bg-warning text-white mb-3">
-                      <div class="card-header">신규 협약기업</div>
-                      <div class="card-body">
-                        <h5 class="card-title text-white">이번달 신규 협약 기업</h5>
-                        <p class="card-text">2곳</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card shadow-none bg-transparent border border-primary mb-3">
-                      <div class="card-header">이달의 최다 취업처</div>
-                      <div class="card-body">
-                        <h5 class="card-title">티쓰리큐</h5>
-                        <p class="card-text">5명</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--/ Style variation -->
-                <!-- Order Statistics -->
-                <div class="col-md-6 col-lg-12 col-xl-12 order-0 mb-4">
-                  <div class="card h-100">
-                    <div class="card-header d-flex align-items-center justify-content-between pb-0">
-                      <div class="card-title mb-0">
-                        <h5 class="m-0 me-2">협약기업 통계</h5>
-                        <small class="text-muted">종류별 협약기업 통계</small>
-                      </div>
-                      <div class="dropdown">
-                        <button class="btn p-0" type="button" id="orederStatistics" data-bs-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false">
-                          <i class="bx bx-dots-vertical-rounded"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
-                          <a class="dropdown-item" href="javascript:void(0);">Select All</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Share</a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-12">
+                  <div class="card mb-4">
+                    <h2 class="card-header">(오)지윤소프트</h2>
+                    <!-- Account -->
                     <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex flex-column align-items-center gap-1">
-                          <h2 class="mb-2">102곳</h2>
-                          <span>전체기업</span>
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img
+                          src="../assets/img/elements/13.jpg"
+                          alt="user-avatar"
+                          class="d-block rounded"
+                          height="100"
+                          width="200"
+                          id="uploadedAvatar"
+                        />
+                        <div class="button-wrapper">
+                          <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                            <span class="d-none d-sm-block">기업로고 이미지 등록</span>
+                            <i class="bx bx-upload d-block d-sm-none"></i>
+                            <input
+                              type="file"
+                              id="upload"
+                              class="account-file-input"
+                              hidden
+                              accept="image/png, image/jpeg"
+                            />
+                          </label>
+                          <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                            <i class="bx bx-reset d-block d-sm-none"></i>
+                            <span class="d-none d-sm-block">Reset</span>
+                          </button>
+
+                          <p class="text-muted mb-0">JPG, GIF or PNG 허용. 최대 사이즈 800K</p>
                         </div>
-                        <div id="orderStatisticsChart"></div>
                       </div>
-                      <ul class="p-0 m-0">
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-primary"><i class="bx bx-mobile-alt"></i></span>
+                    </div>
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="owner" class="form-label">대표자</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="owner"
+                              name="owner"
+                              value="오지윤"
+                              autofocus
+                              readonly
+                            />
                           </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">빅데이터 분야</h6>
-                              <small class="text-muted">빅데이터, DBMS 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">60여곳</small>
+                          <div class="mb-3 col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              value="john.doe@example.com"
+                              placeholder="john.doe@example.com"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="organization" class="form-label">Organization</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="organization"
+                              name="organization"
+                              value="ThemeSelection"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text">US (+1)</span>
+                              <input
+                                type="text"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                class="form-control"
+                                placeholder="202 555 0111"
+                              />
                             </div>
                           </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-success"><i class="bx bx-closet"></i></span>
+                          <div class="mb-3 col-md-6">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
                           </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">인공지능 분야</h6>
-                              <small class="text-muted">AI, 머신러닝, 객체탐지 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">20여곳</small>
-                            </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="state" class="form-label">State</label>
+                            <input class="form-control" type="text" id="state" name="state" placeholder="California" />
                           </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-info"><i class="bx bx-home-alt"></i></span>
+                          <div class="mb-3 col-md-6">
+                            <label for="zipCode" class="form-label">Zip Code</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="zipCode"
+                              name="zipCode"
+                              placeholder="231465"
+                              maxlength="6"
+                            />
                           </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">IoT분야</h6>
-                              <small class="text-muted">회로 설계, 안드로이드 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">10여곳</small>
-                            </div>
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="country">Country</label>
+                            <select id="country" class="select2 form-select">
+                              <option value="">Select</option>
+                              <option value="Australia">Australia</option>
+                              <option value="Bangladesh">Bangladesh</option>
+                              <option value="Belarus">Belarus</option>
+                              <option value="Brazil">Brazil</option>
+                              <option value="Canada">Canada</option>
+                              <option value="China">China</option>
+                              <option value="France">France</option>
+                              <option value="Germany">Germany</option>
+                              <option value="India">India</option>
+                              <option value="Indonesia">Indonesia</option>
+                              <option value="Israel">Israel</option>
+                              <option value="Italy">Italy</option>
+                              <option value="Japan">Japan</option>
+                              <option value="Korea">Korea, Republic of</option>
+                              <option value="Mexico">Mexico</option>
+                              <option value="Philippines">Philippines</option>
+                              <option value="Russia">Russian Federation</option>
+                              <option value="South Africa">South Africa</option>
+                              <option value="Thailand">Thailand</option>
+                              <option value="Turkey">Turkey</option>
+                              <option value="Ukraine">Ukraine</option>
+                              <option value="United Arab Emirates">United Arab Emirates</option>
+                              <option value="United Kingdom">United Kingdom</option>
+                              <option value="United States">United States</option>
+                            </select>
                           </div>
-                        </li>
-                        <li class="d-flex">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-secondary"><i class="bx bx-football"></i></span>
+                          <div class="mb-3 col-md-6">
+                            <label for="language" class="form-label">Language</label>
+                            <select id="language" class="select2 form-select">
+                              <option value="">Select Language</option>
+                              <option value="en">English</option>
+                              <option value="fr">French</option>
+                              <option value="de">German</option>
+                              <option value="pt">Portuguese</option>
+                            </select>
                           </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">그 외</h6>
-                              <small class="text-muted">제조업 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">2곳</small>
-                            </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="timeZones" class="form-label">Timezone</label>
+                            <select id="timeZones" class="select2 form-select">
+                              <option value="">Select Timezone</option>
+                              <option value="-12">(GMT-12:00) International Date Line West</option>
+                              <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
+                              <option value="-10">(GMT-10:00) Hawaii</option>
+                              <option value="-9">(GMT-09:00) Alaska</option>
+                              <option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+                              <option value="-8">(GMT-08:00) Tijuana, Baja California</option>
+                              <option value="-7">(GMT-07:00) Arizona</option>
+                              <option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                              <option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+                              <option value="-6">(GMT-06:00) Central America</option>
+                              <option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+                              <option value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                              <option value="-6">(GMT-06:00) Saskatchewan</option>
+                              <option value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                              <option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+                              <option value="-5">(GMT-05:00) Indiana (East)</option>
+                              <option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+                              <option value="-4">(GMT-04:00) Caracas, La Paz</option>
+                            </select>
                           </div>
-                        </li>
-                      </ul>
+                          <div class="mb-3 col-md-6">
+                            <label for="currency" class="form-label">Currency</label>
+                            <select id="currency" class="select2 form-select">
+                              <option value="">Select Currency</option>
+                              <option value="usd">USD</option>
+                              <option value="euro">Euro</option>
+                              <option value="pound">Pound</option>
+                              <option value="bitcoin">Bitcoin</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">Save changes</button>
+                          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /Account -->
+                  </div>
+                  <div class="card">
+                    <h5 class="card-header">Delete Account</h5>
+                    <div class="card-body">
+                      <div class="mb-3 col-12 mb-0">
+                        <div class="alert alert-warning">
+                          <h6 class="alert-heading fw-bold mb-1">Are you sure you want to delete your account?</h6>
+                          <p class="mb-0">Once you delete your account, there is no going back. Please be certain.</p>
+                        </div>
+                      </div>
+                      <form id="formAccountDeactivation" onsubmit="return false">
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="accountActivation"
+                            id="accountActivation"
+                          />
+                          <label class="form-check-label" for="accountActivation"
+                            >I confirm my account deactivation</label
+                          >
+                        </div>
+                        <button type="submit" class="btn btn-danger deactivate-account">Deactivate Account</button>
+                      </form>
                     </div>
                   </div>
                 </div>
+              </div>
+              
+              <hr class="my-5" />
+
 
 
             </div>
             <!-- / Content -->
+
+            
 
             <div class="content-backdrop fade"></div>
           </div>
@@ -527,13 +556,13 @@
     <!-- / Layout wrapper -->
 
     <div class="buy-now">
-      <a
-        href="#"
-        target="_blank"
-        class="btn btn-primary btn-buy-now"
-        >↑맨위로 이동</a
-      >
-    </div>
+        <a
+          href="#"
+          target="_blank"
+          class="btn btn-primary btn-buy-now"
+          >↑맨위로 이동</a
+        >
+      </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -546,13 +575,11 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../assets/js/dashboards-analytics.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
