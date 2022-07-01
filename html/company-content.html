@@ -317,29 +317,18 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="card mb-4">
+                    <!-- 회사명 -->
                     <h2 class="card-header">(오)지윤소프트</h2>
                     <!-- Account -->
                     <div class="card-body">
                       <div class="d-flex align-items-start align-items-sm-center gap-4">
-                        <img
-                          src="../assets/img/elements/13.jpg"
-                          alt="user-avatar"
-                          class="d-block rounded"
-                          height="100"
-                          width="200"
-                          id="uploadedAvatar"
-                        />
+                        <img src="../assets/img/elements/13.jpg" alt="user-avatar" class="d-block rounded" height="100" width="200"
+                          id="uploadedAvatar" />
                         <div class="button-wrapper">
                           <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
                             <span class="d-none d-sm-block">기업로고 이미지 등록</span>
                             <i class="bx bx-upload d-block d-sm-none"></i>
-                            <input
-                              type="file"
-                              id="upload"
-                              class="account-file-input"
-                              hidden
-                              accept="image/png, image/jpeg"
-                            />
+                            <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
                           </label>
                           <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
                             <i class="bx bx-reset d-block d-sm-none"></i>
@@ -356,179 +345,102 @@
                         <div class="row">
                           <div class="mb-3 col-md-6">
                             <label for="owner" class="form-label">대표자</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              id="owner"
-                              name="owner"
-                              value="오지윤"
-                              autofocus
-                              readonly
-                            />
+                            <input class="form-control" type="text" id="owner" name="owner" value="오지윤" autofocus />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
+                            <label for="company_register" class="form-label">사업자등록번호</label>
+                            <input class="form-control" type="text" name="company_register" id="company_register" value="000-000-000000" />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              id="email"
-                              name="email"
-                              value="john.doe@example.com"
-                              placeholder="john.doe@example.com"
-                            />
+                            <label for="company_homepage" class="form-label">홈페이지</label>
+                            <input class="form-control" type="text" id="company_homepage" name="company_homepage" value="https://www.jiyun.com/"
+                              placeholder="https://www.jiyun.com/" />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="organization" class="form-label">Organization</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="organization"
-                              name="organization"
-                              value="ThemeSelection"
-                            />
+                            <label for="company_workers" class="form-label">상시근로자수</label>
+                            <input type="text" class="form-control" id="company_workers" name="company_workers" value="00명" />
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label class="form-label" for="phoneNumber">Phone Number</label>
-                            <div class="input-group input-group-merge">
-                              <span class="input-group-text">US (+1)</span>
-                              <input
-                                type="text"
-                                id="phoneNumber"
-                                name="phoneNumber"
-                                class="form-control"
-                                placeholder="202 555 0111"
-                              />
-                            </div>
+                          <div class="mb-3 col-md-8">
+                            <label for="company_address" class="form-label">주소</label>
+                            <input type="text" class="form-control" id="company_address" name="company_address" value="광주광역시 남구 송암로60, CGI센터 2층" />
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
+                          <div class="mb-3 col-md-2 nav-align-bottom"><button type="button" class="btn rounded-pill btn-outline-primary">주소 추가</button></div>
+                          <div class="mb-3 col-md-8">
+                            <input type="text" class="form-control" id="company_address2" name="company_address" value="광주광역시 동구 예술길 31-15 3~5, 7층" />
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="state" class="form-label">State</label>
-                            <input class="form-control" type="text" id="state" name="state" placeholder="California" />
+                          <div class="mb-3 col-md-12">
+                            <label class="form-label" for="company_manager">기업 담당자</label>
+                            <table class="table" id="company_manager">
+                                <thead>
+                                  <tr>
+                                    <td>성명</td>
+                                    <td>직책</td>
+                                    <td>연락처</td>
+                                    <td>Email</td>
+                                    <td>비고</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <!-- 내용1 -->
+                                  <tr>
+                                    <td><input class="form-control" type="text" name="company_m_name" value="오지윤" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_position" value="대표이사" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-1234-1234" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_email" value="ohjiyun@jiyunsoft.com" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_remark" value="최종성과발표회만 참석" autofocus /></td>
+                                  </tr>
+                                  <!-- /내용1 -->
+                                  <!-- 내용2 -->
+                                  <tr>
+                                    <td><input class="form-control" type="text" name="company_m_name" value="윤지오" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_position" value="팀장" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-5678-5678" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_email" value="jiyunoh@jiyunsoft.com" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_remark" value="인사담당자 주로 연락담당" autofocus /></td>
+                                  </tr>
+                                  <!-- /내용2 -->
+                                </tbody>
+                            </table>
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="zipCode" class="form-label">Zip Code</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="zipCode"
-                              name="zipCode"
-                              placeholder="231465"
-                              maxlength="6"
-                            />
+                          <div class="mb-3 col-md-4">
+                            <label for="company_region" class="form-label">지역구분</label>
+                            <input type="text" class="form-control" id="company_region" name="company_region" placeholder="광주" />
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label class="form-label" for="country">Country</label>
-                            <select id="country" class="select2 form-select">
-                              <option value="">Select</option>
-                              <option value="Australia">Australia</option>
-                              <option value="Bangladesh">Bangladesh</option>
-                              <option value="Belarus">Belarus</option>
-                              <option value="Brazil">Brazil</option>
-                              <option value="Canada">Canada</option>
-                              <option value="China">China</option>
-                              <option value="France">France</option>
-                              <option value="Germany">Germany</option>
-                              <option value="India">India</option>
-                              <option value="Indonesia">Indonesia</option>
-                              <option value="Israel">Israel</option>
-                              <option value="Italy">Italy</option>
-                              <option value="Japan">Japan</option>
-                              <option value="Korea">Korea, Republic of</option>
-                              <option value="Mexico">Mexico</option>
-                              <option value="Philippines">Philippines</option>
-                              <option value="Russia">Russian Federation</option>
-                              <option value="South Africa">South Africa</option>
-                              <option value="Thailand">Thailand</option>
-                              <option value="Turkey">Turkey</option>
-                              <option value="Ukraine">Ukraine</option>
-                              <option value="United Arab Emirates">United Arab Emirates</option>
-                              <option value="United Kingdom">United Kingdom</option>
-                              <option value="United States">United States</option>
+                          <div class="mb-3 col-md-4">
+                            <label for="company_category" class="form-label">업종/업태</label>
+                            <input type="text" class="form-control" id="company_category" name="company_category" placeholder="AI 소프트웨어 개발" />
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="company_course" class="form-label">관련 과정구분</label>
+                            <select class="select2 form-select" id="company_course">
+                              <option value="">관련 과정 선택</option>
+                              <option value="bigdata">빅데이터</option>
+                              <option value="ai">인공지능</option>
+                              <option value="iot">사물인터넷(IoT)</option>
                             </select>
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="language" class="form-label">Language</label>
-                            <select id="language" class="select2 form-select">
-                              <option value="">Select Language</option>
-                              <option value="en">English</option>
-                              <option value="fr">French</option>
-                              <option value="de">German</option>
-                              <option value="pt">Portuguese</option>
-                            </select>
+                          <div class="mb-3 col-md-8">
+                            <label for="company_recruit" class="form-label">채용 분야</label>
+                            <input type="text" class="form-control" id="company_recruit" name="company_recruit" placeholder="Java개발자, SQL 가능자" maxlength="6" />
                           </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="timeZones" class="form-label">Timezone</label>
-                            <select id="timeZones" class="select2 form-select">
-                              <option value="">Select Timezone</option>
-                              <option value="-12">(GMT-12:00) International Date Line West</option>
-                              <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
-                              <option value="-10">(GMT-10:00) Hawaii</option>
-                              <option value="-9">(GMT-09:00) Alaska</option>
-                              <option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
-                              <option value="-8">(GMT-08:00) Tijuana, Baja California</option>
-                              <option value="-7">(GMT-07:00) Arizona</option>
-                              <option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
-                              <option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
-                              <option value="-6">(GMT-06:00) Central America</option>
-                              <option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
-                              <option value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
-                              <option value="-6">(GMT-06:00) Saskatchewan</option>
-                              <option value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
-                              <option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
-                              <option value="-5">(GMT-05:00) Indiana (East)</option>
-                              <option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
-                              <option value="-4">(GMT-04:00) Caracas, La Paz</option>
-                            </select>
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="currency" class="form-label">Currency</label>
-                            <select id="currency" class="select2 form-select">
-                              <option value="">Select Currency</option>
-                              <option value="usd">USD</option>
-                              <option value="euro">Euro</option>
-                              <option value="pound">Pound</option>
-                              <option value="bitcoin">Bitcoin</option>
-                            </select>
-                          </div>
+                          
                         </div>
                         <div class="mt-2">
-                          <button type="submit" class="btn btn-primary me-2">Save changes</button>
-                          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                          <button type="submit" class="btn btn-primary me-2">수정하기</button>
+                          <button type="reset" class="btn btn-outline-secondary">취소</button>
                         </div>
                       </form>
                     </div>
                     <!-- /Account -->
                   </div>
                   <div class="card">
-                    <h5 class="card-header">Delete Account</h5>
+                    <h5 class="card-header">협약 기업 관리 내역</h5>
                     <div class="card-body">
                       <div class="mb-3 col-12 mb-0">
                         <div class="alert alert-warning">
-                          <h6 class="alert-heading fw-bold mb-1">Are you sure you want to delete your account?</h6>
                           <p class="mb-0">Once you delete your account, there is no going back. Please be certain.</p>
                         </div>
                       </div>
-                      <form id="formAccountDeactivation" onsubmit="return false">
-                        <div class="form-check mb-3">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            name="accountActivation"
-                            id="accountActivation"
-                          />
-                          <label class="form-check-label" for="accountActivation"
-                            >I confirm my account deactivation</label
-                          >
-                        </div>
-                        <button type="submit" class="btn btn-danger deactivate-account">Deactivate Account</button>
-                      </form>
                     </div>
                   </div>
                 </div>
