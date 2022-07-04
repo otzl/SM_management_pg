@@ -53,8 +53,6 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
-
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -165,22 +163,22 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="cgi-student.html" class="menu-link">
                     <div data-i18n="Accordion">CGI 훈련생</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="campus-student.html" class="menu-link">
                     <div data-i18n="Accordion">캠퍼스 훈련생</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="branch-student.html" class="menu-link">
                     <div data-i18n="Accordion">분원 훈련생</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                  <a href="AI-student.html" class="menu-link">
                     <div data-i18n="Accordion">인공지능사관학교 훈련생</div>
                   </a>
                 </li>
@@ -190,7 +188,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="ui-badges.html" class="menu-link">
+                  <a href="statistic.html" class="menu-link">
                     <div data-i18n="Badges">훈련생 통계</div>
                   </a>
                 </li>
@@ -207,12 +205,12 @@
               </a>
               <!-- 협약기업 하위메뉴 -->
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="forms-basic-inputs.html" class="menu-link">
                     <div data-i18n="Basic Inputs">협약기업 요약</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="forms-input-groups.html" class="menu-link">
                     <div data-i18n="Input groups">협약기업 관리</div>
                   </a>
@@ -303,78 +301,7 @@
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
-                  <a
-                    class="github-button"
-                    href="https://github.com/themeselection/sneat-html-admin-template-free"
-                    data-icon="octicon-star"
-                    data-size="large"
-                    data-show-count="true"
-                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-                    >Star</a
-                  >
-                </li>
-
-                <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Settings</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!--/ User -->
+        
               </ul>
             </div>
           </nav>
@@ -386,133 +313,160 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <!-- Style variation -->
-              <h5 class="pb-1 mb-4">협약기업 요약</h5>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">협약기업관리/</span> 협약기업 상세 페이지</h4>
               <div class="row">
-
-                  <!--/ Order Statistics -->
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card bg-primary text-white mb-3">
-                      <div class="card-header">2022 협약기업</div>
-                      <div class="card-body">
-                        <h5 class="card-title text-white">현재 협약 기업 수</h5>
-                        <p class="card-text">102곳</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card bg-warning text-white mb-3">
-                      <div class="card-header">신규 협약기업</div>
-                      <div class="card-body">
-                        <h5 class="card-title text-white">이번달 신규 협약 기업</h5>
-                        <p class="card-text">2곳</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card shadow-none bg-transparent border border-primary mb-3">
-                      <div class="card-header">이달의 최다 취업처</div>
-                      <div class="card-body">
-                        <h5 class="card-title">티쓰리큐</h5>
-                        <p class="card-text">5명</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--/ Style variation -->
-                <!-- Order Statistics -->
-                <div class="col-md-6 col-lg-12 col-xl-12 order-0 mb-4">
-                  <div class="card h-100">
-                    <div class="card-header d-flex align-items-center justify-content-between pb-0">
-                      <div class="card-title mb-0">
-                        <h5 class="m-0 me-2">협약기업 통계</h5>
-                        <small class="text-muted">종류별 협약기업 통계</small>
-                      </div>
-                      <div class="dropdown">
-                        <button class="btn p-0" type="button" id="orederStatistics" data-bs-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false">
-                          <i class="bx bx-dots-vertical-rounded"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
-                          <a class="dropdown-item" href="javascript:void(0);">Select All</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Share</a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-12">
+                  <div class="card mb-4">
+                    <!-- 회사명 -->
+                    <h2 class="card-header">(오)지윤소프트</h2>
+                    <!-- Account -->
                     <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex flex-column align-items-center gap-1">
-                          <h2 class="mb-2">102곳</h2>
-                          <span>전체기업</span>
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img src="../assets/img/elements/13.jpg" alt="user-avatar" class="d-block rounded" height="100" width="200"
+                          id="uploadedAvatar" />
+                        <div class="button-wrapper">
+                          <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                            <span class="d-none d-sm-block">기업로고 이미지 등록</span>
+                            <i class="bx bx-upload d-block d-sm-none"></i>
+                            <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                          </label>
+                          <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                            <i class="bx bx-reset d-block d-sm-none"></i>
+                            <span class="d-none d-sm-block">Reset</span>
+                          </button>
+
+                          <p class="text-muted mb-0">JPG, GIF or PNG 허용. 최대 사이즈 800K</p>
                         </div>
-                        <div id="orderStatisticsChart"></div>
                       </div>
-                      <ul class="p-0 m-0">
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-primary"><i class="bx bx-mobile-alt"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">빅데이터 분야</h6>
-                              <small class="text-muted">빅데이터, DBMS 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">60여곳</small>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-success"><i class="bx bx-closet"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">인공지능 분야</h6>
-                              <small class="text-muted">AI, 머신러닝, 객체탐지 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">20여곳</small>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-info"><i class="bx bx-home-alt"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">IoT분야</h6>
-                              <small class="text-muted">회로 설계, 안드로이드 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">10여곳</small>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-secondary"><i class="bx bx-football"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">그 외</h6>
-                              <small class="text-muted">제조업 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">2곳</small>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
                     </div>
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="owner" class="form-label">대표자</label>
+                            <input class="form-control" type="text" id="owner" name="owner" value="오지윤" autofocus />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="company_register" class="form-label">사업자등록번호</label>
+                            <input class="form-control" type="text" name="company_register" id="company_register" value="000-000-000000" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="company_homepage" class="form-label">홈페이지</label>
+                            <input class="form-control" type="text" id="company_homepage" name="company_homepage" value="https://www.jiyun.com/"
+                              placeholder="https://www.jiyun.com/" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="company_workers" class="form-label">상시근로자수</label>
+                            <input type="text" class="form-control" id="company_workers" name="company_workers" value="00명" />
+                          </div>
+                          <div class="mb-3 col-md-8">
+                            <label for="company_address" class="form-label">주소</label>
+                            <input type="text" class="form-control" id="company_address" name="company_address" value="광주광역시 남구 송암로60, CGI센터 2층" />
+                          </div>
+                          <div class="mb-3 col-md-2 nav-align-bottom"><button type="button" class="btn rounded-pill btn-outline-primary">주소 추가</button></div>
+                          <div class="mb-3 col-md-8">
+                            <input type="text" class="form-control" id="company_address2" name="company_address" value="광주광역시 동구 예술길 31-15 3~5, 7층" />
+                          </div>
+                          <div class="mb-3 col-md-12">
+                            <label class="form-label" for="company_manager">기업 담당자</label>
+                            <table class="table" id="company_manager">
+                                <thead>
+                                  <tr>
+                                    <td>성명</td>
+                                    <td>직책</td>
+                                    <td>연락처</td>
+                                    <td>Email</td>
+                                    <td>비고</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <!-- 내용1 -->
+                                  <tr>
+                                    <td><input class="form-control" type="text" name="company_m_name" value="오지윤" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_position" value="대표이사" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-1234-1234" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_email" value="ohjiyun@jiyunsoft.com" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_remark" value="최종성과발표회만 참석" autofocus /></td>
+                                  </tr>
+                                  <!-- /내용1 -->
+                                  <!-- 내용2 -->
+                                  <tr>
+                                    <td><input class="form-control" type="text" name="company_m_name" value="윤지오" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_position" value="팀장" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-5678-5678" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_email" value="jiyunoh@jiyunsoft.com" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_m_remark" value="인사담당자 주로 연락담당" autofocus /></td>
+                                  </tr>
+                                  <!-- /내용2 -->
+                                  <tr>
+                                    <td colspan="5"><button class="btn rounded-pill btn-outline-primary">담당자 추가</button></td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="company_region" class="form-label">지역구분</label>
+                            <input type="text" class="form-control" id="company_region" name="company_region" placeholder="광주" />
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="company_category" class="form-label">업종/업태</label>
+                            <input type="text" class="form-control" id="company_category" name="company_category" placeholder="AI 소프트웨어 개발" />
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="company_course" class="form-label">관련 과정구분</label>
+                            <select class="select2 form-select" id="company_course">
+                              <option value="">관련 과정 선택</option>
+                              <option value="bigdata">빅데이터</option>
+                              <option value="ai">인공지능</option>
+                              <option value="iot">사물인터넷(IoT)</option>
+                            </select>
+                          </div>
+                          <div class="mb-3 col-md-8">
+                            <label for="company_recruit" class="form-label">채용 분야</label>
+                            <input type="text" class="form-control" id="company_recruit" name="company_recruit" placeholder="Java개발자, SQL 가능자" maxlength="6" />
+                          </div>
+                          <div class="mb-3 col-md-8">
+                            <label for="company_papers" class="form-label">협약서 등록</label>
+                            <input type="file" class="form-control" id="company_papers"/>
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">수정하기</button>
+                          <button type="reset" class="btn btn-outline-secondary">취소</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /Account -->
+                  </div>
+                  <div class="card">
+                    <h5 class="card-header">협약 기업 관리 내역</h5>
+                    <div class="card-body">
+                      <form action="" method="post">
+                        <div class="mb-3 col-12 mb-0">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">많은 인원 채용 예정.</textarea>
+                        </div>
+                        <div class="mb-3 col-12 mb-0">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">스터디랩 신청함</textarea>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">수정하기</button>
+                          <button type="reset" class="btn btn-outline-secondary">취소</button>
+                        </div>
+                      </form>
+                    </div><!-- /card-body -->
                   </div>
                 </div>
+              </div>
+              
+              <hr class="my-5" />
+
 
 
             </div>
             <!-- / Content -->
+
+            
 
             <div class="content-backdrop fade"></div>
           </div>
@@ -527,13 +481,13 @@
     <!-- / Layout wrapper -->
 
     <div class="buy-now">
-      <a
-        href="#"
-        target="_blank"
-        class="btn btn-primary btn-buy-now"
-        >↑맨위로 이동</a
-      >
-    </div>
+        <a
+          href="#"
+          target="_blank"
+          class="btn btn-primary btn-buy-now"
+          >↑맨위로 이동</a
+        >
+      </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -546,13 +500,11 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../assets/js/dashboards-analytics.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

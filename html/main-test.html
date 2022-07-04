@@ -129,7 +129,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2"></span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -141,7 +141,7 @@
 
           <ul class="menu-inner py-1">
             <!-- 메인 -->
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="detailMain.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">메인</div>
@@ -200,14 +200,14 @@
             <!-- 협약기업 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">협약 기업</span></li>
             <!-- 협약기업관리 토글 -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Elements">협약기업 관리</div>
               </a>
               <!-- 협약기업 하위메뉴 -->
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="forms-basic-inputs.html" class="menu-link">
                     <div data-i18n="Basic Inputs">협약기업 요약</div>
                   </a>
@@ -384,135 +384,479 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
+            <!-- Toasts(알림창) -->
+            <div class="position-absolute top-0">
+            <!-- toast영역 -->
+            <div class="bs-toast toast toast-placement-ex m-2 bg-warning show" role="alert" aria-live="assertive" aria-atomic="true"
+              data-delay="2000">
+              <div class="toast-header text-dark">
+                <i class="bx bx-bell me-2"></i>
+                <div class="me-auto fw-semibold">오늘의 알림</div>
+                <small>Today</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body text-dark">
+                <p>안녕하세요!<br>채용게시판 업로드, 취업현황 업데이트가 필요합니다.<br>좋은 하루되세요!</p>
+                <div class="text-end"><small>취업지원센터</small></div>
+              </div>
+            </div>
+            <!-- toast영역 -->
+            <!-- toast영역 -->
+            <div class="bs-toast toast toast-placement-ex m-2 bg-warning show" role="alert" aria-live="assertive" aria-atomic="true"
+              data-delay="2000">
+              <div class="toast-header text-dark">
+                <i class="bx bx-bell me-2"></i>
+                <div class="me-auto fw-semibold">오늘의 알림2</div>
+                <small>Today</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body text-dark">
+                <p>안녕하세요!<br>채용게시판 업로드, 취업현황 업데이트가 필요합니다.<br>좋은 하루되세요!</p>
+                <div class="text-end"><small>취업지원센터</small></div>
+              </div>
+            </div>
+            <!-- toast영역 -->
+          </div>
+              <!-- /Toasts(알림창)-->
+            
+            <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+  <!-- Position it -->
+  <div style="position: absolute; top: 0; right: 0;">
 
+    <!-- Then put toasts within -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded mr-2" alt="...">
+        <strong class="mr-auto">Bootstrap</strong>
+        <small class="text-muted">just now</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        See? Just like this.
+      </div>
+    </div>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded mr-2" alt="...">
+        <strong class="mr-auto">Bootstrap</strong>
+        <small class="text-muted">2 seconds ago</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Heads up, toasts will stack automatically
+      </div>
+    </div>
+  </div>
+</div>
+            
             <div class="container-xxl flex-grow-1 container-p-y">
-              <!-- Style variation -->
-              <h5 class="pb-1 mb-4">협약기업 요약</h5>
               <div class="row">
+             
+                <!-- Total Revenue -->
+                <div class="col-12 mb-4">
+                  <div class="card">
+                    <div class="row row-bordered g-0">
+                   
+                      <div class="col-md-4">
+                        <div class="card-body">
+                       
+                        </div>
+                        <div id="growthChart"></div>
+                        <div class="text-center fw-semibold pt-3 mb-2">62% Company Growth</div>
 
-                  <!--/ Order Statistics -->
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card bg-primary text-white mb-3">
-                      <div class="card-header">2022 협약기업</div>
-                      <div class="card-body">
-                        <h5 class="card-title text-white">현재 협약 기업 수</h5>
-                        <p class="card-text">102곳</p>
+                      
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card bg-warning text-white mb-3">
-                      <div class="card-header">신규 협약기업</div>
-                      <div class="card-body">
-                        <h5 class="card-title text-white">이번달 신규 협약 기업</h5>
-                        <p class="card-text">2곳</p>
+
+                      <div class="col-md-4">
+                        <div class="card-body">
+                       
+                        </div>
+                        <div id="growthChart"></div>
+                        <div class="text-center fw-semibold pt-3 mb-2">62% Company Growth</div>
+
+                        <div class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
+                          <div class="d-flex">
+                            <div class="me-2">
+                              <span class="badge bg-label-primary p-2"><i class="bx bx-dollar text-primary"></i></span>
+                            </div>
+                            <div class="d-flex flex-column">
+                              <small>2022</small>
+                              <h6 class="mb-0">$32.5k</h6>
+                            </div>
+                          </div>
+                          <div class="d-flex">
+                            <div class="me-2">
+                              <span class="badge bg-label-info p-2"><i class="bx bx-wallet text-info"></i></span>
+                            </div>
+                            <div class="d-flex flex-column">
+                              <small>2021</small>
+                              <h6 class="mb-0">$41.2k</h6>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card shadow-none bg-transparent border border-primary mb-3">
-                      <div class="card-header">이달의 최다 취업처</div>
-                      <div class="card-body">
-                        <h5 class="card-title">티쓰리큐</h5>
-                        <p class="card-text">5명</p>
+
+
+                      <div class="col-md-4">
+                        <div class="card-body">
+                        
+                        </div>
+                        <div id="growthChart"></div>
+                        <div class="text-center fw-semibold pt-3 mb-2">62% Company Growth</div>
+
+                        <div class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
+                          <div class="d-flex">
+                            <div class="me-2">
+                              <span class="badge bg-label-primary p-2"><i class="bx bx-dollar text-primary"></i></span>
+                            </div>
+                            <div class="d-flex flex-column">
+                              <small>2022</small>
+                              <h6 class="mb-0">$32.5k</h6>
+                            </div>
+                          </div>
+                          <div class="d-flex">
+                            <div class="me-2">
+                              <span class="badge bg-label-info p-2"><i class="bx bx-wallet text-info"></i></span>
+                            </div>
+                            <div class="d-flex flex-column">
+                              <small>2021</small>
+                              <h6 class="mb-0">$41.2k</h6>
+                            </div>
+                          </div>
+                        </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
-                <!--/ Style variation -->
-                <!-- Order Statistics -->
-                <div class="col-md-6 col-lg-12 col-xl-12 order-0 mb-4">
+                <!--/ Total Revenue -->
+               
+              <div class="row">
+                <div class="col-md-6 col-lg-4 order-2 mb-4">
                   <div class="card h-100">
-                    <div class="card-header d-flex align-items-center justify-content-between pb-0">
-                      <div class="card-title mb-0">
-                        <h5 class="m-0 me-2">협약기업 통계</h5>
-                        <small class="text-muted">종류별 협약기업 통계</small>
-                      </div>
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2">6월 개강반</h5>
                       <div class="dropdown">
-                        <button class="btn p-0" type="button" id="orederStatistics" data-bs-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="transactionID"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
                           <i class="bx bx-dots-vertical-rounded"></i>
                         </button>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
-                          <a class="dropdown-item" href="javascript:void(0);">Select All</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                          <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
                         </div>
                       </div>
                     </div>
                     <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex flex-column align-items-center gap-1">
-                          <h2 class="mb-2">102곳</h2>
-                          <span>전체기업</span>
+                       <!-- List group Flush (Without main border) -->
+                    <div class="">
+                      <!-- <small class="text-light fw-semibold">6월</small> -->
+                      <div class="demo-inline-spacing mt-3">
+                        <div class="list-group list-group-flush">
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/15 인공지능사관학교 입교식</a
+                          >
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/20 순천분원 입교식</a
+                          >
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/27 서울분원 입교식</a
+                          >
+                         
                         </div>
-                        <div id="orderStatisticsChart"></div>
                       </div>
-                      <ul class="p-0 m-0">
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-primary"><i class="bx bx-mobile-alt"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">빅데이터 분야</h6>
-                              <small class="text-muted">빅데이터, DBMS 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">60여곳</small>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-success"><i class="bx bx-closet"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">인공지능 분야</h6>
-                              <small class="text-muted">AI, 머신러닝, 객체탐지 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">20여곳</small>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-info"><i class="bx bx-home-alt"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">IoT분야</h6>
-                              <small class="text-muted">회로 설계, 안드로이드 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">10여곳</small>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <span class="avatar-initial rounded bg-label-secondary"><i class="bx bx-football"></i></span>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <h6 class="mb-0">그 외</h6>
-                              <small class="text-muted">제조업 등</small>
-                            </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">2곳</small>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
                     </div>
-                  </div>
+                    <!--/ List group Flush (Without main border) -->
                 </div>
+                <!--/ Transactions -->
+              </div>
+            </div>
 
+                <div class="col-md-6 col-lg-4 order-2 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2">6월 성과발표회</h5>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="transactionID"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                          <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                       <!-- List group Flush (Without main border) -->
+                    <div class="">
+                      <!-- <small class="text-light fw-semibold">6월</small> -->
+                      <div class="demo-inline-spacing mt-3">
+                        <div class="list-group list-group-flush">
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/13 지능형 IoT융합 SW전문가 과정 7회차</a
+                          >
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/22 인공지능 융합서비스 개발자 과정 10회차</a
+                          >
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/22 빅데이터 분석서비스 개발자 과정 10회차</a
+                          >
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ List group Flush (Without main border) -->
+                </div>
+                <!--/ Transactions -->
+              </div>
+            </div>
 
+                <!-- Transactions -->
+                <div class="col-md-6 col-lg-4 order-2 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2">6월 설명회</h5>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="transactionID"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                          <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                       <!-- List group Flush (Without main border) -->
+                    <div class="">
+                      <!-- <small class="text-light fw-semibold">6월</small> -->
+                      <div class="demo-inline-spacing mt-3">
+                        <div class="list-group list-group-flush">
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/20 고고탁-14:10</a
+                          >
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/21 다원DNS-10:00</a
+                          >
+                          <a href="javascript:void(0);" class="list-group-item list-group-item-action"
+                            >6/21 유니컴퍼니-16:00</a
+                          >
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ List group Flush (Without main border) -->
+                </div>
+                <!--/ Transactions -->
+              </div>
             </div>
             <!-- / Content -->
+
+            <div class="container">
+	<div class="col-md-12">
+    	<div class="panel panel-default">
+				<div class="panel-heading">
+					Employee
+				</div>
+        <div class="panel-body">
+					<table class="table table-condensed table-striped">
+    <thead>
+        <tr>
+					<th></th>
+          <th>Fist Name</th>
+          <th>Last Name</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+           <td><button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+            <td>Carlos</td>
+            <td>Mathias</td>
+            <td>Leme</td>
+            <td>SP</td>
+          	<td>new</td>
+        </tr>
+			
+        <tr>
+            <td colspan="12" class="hiddenRow">
+							<div class="accordian-body collapse" id="demo1"> 
+              <table class="table table-striped">
+                      <thead>
+                        <tr class="info">
+													<th>Job</th>
+													<th>Company</th>
+													<th>Salary</th>		
+													<th>Date On</th>	
+													<th>Date off</th>	
+													<th>Action</th>	
+												</tr>
+											</thead>	
+								  		
+											<tbody>
+												
+                        <tr data-toggle="collapse"  class="accordion-toggle" data-target="#demo10">
+													<td> <a href="#">Enginner Software</a></td>
+													<td>Google</td>
+													<td>U$8.00000 </td>
+													<td> 2016/09/27</td>
+													<td> 2017/09/27</td>
+													<td> 
+														<a href="#" class="btn btn-default btn-sm">
+                 								 <i class="glyphicon glyphicon-cog"></i>
+															</a>
+													</td>
+												</tr>
+												
+												 <tr>
+            <td colspan="12" class="hiddenRow">
+							<div class="accordian-body collapse" id="demo10"> 
+              <table class="table table-striped">
+                      <thead>
+                        <tr>
+													<td><a href="#"> XPTO 1</a></td>
+													<td>XPTO 2</td>
+													<td>Obs</td>
+												</tr>
+                        <tr>
+													<th>item 1</th>
+													<th>item 2</th>
+													<th>item 3 </th>
+													<th>item 4</th>
+													<th>item 5</th>
+													<th>Actions</th>
+												</tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+													<td>item 1</td>
+													<td>item 2</td>
+													<td>item 3</td>
+													<td>item 4</td>
+													<td>item 5</td>
+													<td>
+															<a href="#" class="btn btn-default btn-sm">
+                  							<i class="glyphicon glyphicon-cog"></i>
+															</a>
+													</td>
+												</tr>
+                      </tbody>
+               	</table>
+              
+              </div> 
+          </td>
+        </tr>
+																										
+                        <tr>
+													<td>Scrum Master</td>
+													<td>Google</td>
+													<td>U$8.00000 </td>
+													<td> 2016/09/27</td>
+													<td> 2017/09/27</td>
+													<td> <a href="#" class="btn btn-default btn-sm">
+                 								 <i class="glyphicon glyphicon-cog"></i>
+															</a>
+													</td>
+												</tr>
+												
+														
+                        <tr>
+													<td>Back-end</td>
+													<td>Google</td>
+													<td>U$8.00000 </td>
+													<td> 2016/09/27</td>
+													<td> 2017/09/27</td>
+													<td> <a href="#" class="btn btn-default btn-sm">
+                 								 <i class="glyphicon glyphicon-cog"></i>
+															</a>
+													</td>
+												</tr>
+												
+														
+                        <tr>
+													<td>Front-end</td>
+													<td>Google</td>
+													<td>U$8.00000 </td>
+													<td> 2016/09/27</td>
+													<td> 2017/09/27</td>
+													<td> <a href="#" class="btn btn-default btn-sm">
+                 								 <i class="glyphicon glyphicon-cog"></i>
+															</a>
+													</td>
+												</tr>
+								
+               
+                      </tbody>
+               	</table>
+              
+              </div> 
+          </td>
+        </tr>
+      
+      
+			
+        <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+             <td><button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+             <td>Silvio</td>
+            <td>Santos</td>
+            <td>São Paulo</td>
+            <td>SP</td>
+          <td> new</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse">Demo2</div></td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+            <td><button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>Dracena</td>
+            <td>SP</td>
+          <td> New</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="hiddenRow"><div id="demo3" class="accordian-body collapse">Demo3 sadasdasdasdasdas</div></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+        
+          </div> 
+        
+      </div>
+	</div>
+       
 
             <div class="content-backdrop fade"></div>
           </div>
