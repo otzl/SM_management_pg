@@ -61,9 +61,15 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+
+    <style>
+      .box{
+        border:solid 1px;
+      }
+    </style>
   </head>
 
-  <>
+  <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
@@ -289,123 +295,211 @@
           <div class="content-wrapper">
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h2 class="fw-bold py-3 mb-4">교육생 카드</h2>
+              <h2 class="fw-bold py-3 mb-4">교육생 정보</h2>
+
+              <div class="card mb-4 col-9" style="margin:auto">
+                <div class="card-body">
+                  <h3 class="card-title">[K-디지털] 빅데이터 분석서비스 개발자과정 8회차</h3>
+                 
+
+                 
+                 
+                   <!-- Bordered Table -->
+              <div class="card">
               
-              <!-- Hoverable Table rows -->
-                  <div class="col-xl-12">
-                   
-                    <div class="nav-align-top mb-4">
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                          <button
-                            type="button"
-                            class="nav-link active"
-                            role="tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#navs-top-home"
-                            aria-controls="navs-top-home"
-                            aria-selected="true"
-                          >
-                            기본정보
-                          </button>
-                        </li>
-                        <li class="nav-item">
-                          <button
-                            type="button"
-                            class="nav-link"
-                            role="tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#navs-top-profile"
-                            aria-controls="navs-top-profile"
-                            aria-selected="false"
-                          >
-                            상담내용
-                          </button>
-                        </li>
-                      
-                      </ul>
-                      <div class="tab-content">
-                        <div class="tab-pane fade show active container" id="navs-top-home" role="tabpanel">
-                          <img src="1.jpg" style="border:1px solid black; width: 135px; height: 178px;" align="left"></img>
-                          <dl class="row mt-2">
-                            <dt class="col-sm-1">과정명</dt>
-                            <dd class="col-sm-11">[K-디지털] 빅데이터 분석서비스 개발자과정 8회차</dd>
-        
-                            <dt class="col-sm-1">교육기간</dt>
-                            <dd class="col-sm-11">2021.11.15 - 2022.04.27</dd>
-        
-                            <div class="row">
-                            <dt class="col-sm-1">이름</dt>
-                            <dd class="col-sm-1">권우진</dd>
-
-                            <dt class="col-sm-1">생년월일</dt>
-                            <dd class="col-sm-1">950809</dd>
-
-                          </div>
-                          <dt class="col-sm-1">연락처</dt>
-                          <dd class="col-sm-11">010-7745-8585</dd>
-
-                            <dt class="col-sm-1">담임</dt>
-                            <dd class="col-sm-11">박병관</dd>
-        
-                            <dt class="col-sm-1">주소</dt>
-                            <dd class="col-sm-11">부산광역시 해운대구 세실로 138</dd>
-        
-                            <dt class="col-sm-1">현주소</dt>
-                            <dd class="col-sm-11">광주광역시 동구 동명로 25번길 7-8</dd>
-                        
-                            
-                            <div class="row">
-                              <dt class="col-sm-1">학력</dt>
-                              <dd class="col-sm-1">대졸</dd>
-  
-                              <dt class="col-sm-1">전공</dt>
-                              <dd class="col-sm-2">호텔경영학과</dd>
-  
+                <div class="card-body">
+                  <img src="1.jpg" style="border:1px solid black; width: 135px; height: 178px;" align="left"></img>
+                  <div class="table-responsive text-nowrap">
+                    <table class="table table-bordered">
+                      <!-- <thead>
+                        <tr>
+                          <th>Project</th>
+                          <th>Client</th>
+                          <th>Users</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead> -->
+                      <tbody>
+                        <tr>
+                          <td>
+                           교육기간
+                          </td>
+                        <td>2021.11.15 - 2022.04.27</td>
+                            <td>
+                             담임
+                            </td>
+                            <td>박병관</td>
+                        </tr>
+                        <tr>
+                          <td>이름</td>
+                          <td>권우진</td>
+                          <td>생년월일</td>
+                          <td>950809</td>
+                        </tr>
                        
+                        <tr>
+                          <td>
+                           연락처
+                          </td>
+                          <th colspan="3">010-7745-8585</th>
+                        </tr>
 
-                            <!-- <dt class="col-sm-1">전공</dt>
-                            <dd class="col-sm-3">호텔경영학과</dd> -->
-                          </div>
-        
-                            <dt class="col-sm-1">자격증</dt>
-                            <dd class="col-sm-11">컨벤션기획사2급필기</dd>
-        
-                            <dt class="col-sm-1">희망지역</dt>
-                            <dd class="col-sm-11">서울, 광주</dd>
-        
-                            <dt class="col-sm-1">희망직무</dt>
-                            <dd class="col-sm-11">기획, 마케팅, 프론트엔드</dd>
-        
-                            <dt class="col-sm-1">지원이력</dt>
-                            <dd class="col-sm-11">-</dd>
-        
-                            <form action="" method="post" enctype="multipart/form-data" name="">
-                            <dt class="col-sm-1">지원파일</dt>
-                            <br>
-                            <dd class="col-sm-11"> <input
-                              type="file"
-                              name="Filename"
-                              multiple
-                            /></dd>
-                          </form>
-                          </dl>
-                        </div>
+                        <tr>
+                          <td>
+                          주소
+                          </td>
+                          <th colspan="3">부산광역시 해운대구 세실로 138</th>
+                        </tr>
+
+                        <tr>
+                          <td>
+                          현주소
+                          </td>
+                          <th colspan="3">광주광역시 동구 동명로 25번길 7-8</th>
+                        </tr>
+
+                        <tr>
+                          <td>
+                          학력
+                          </td>
+                        <td>대학교 졸업</td>
+                            <td>
+                             전공
+                            </td>
+                            <td>호텔경영학과</td>
+                        </tr>
                         
-                        <!-- 상담내용 -->
-                        <div class="tab-pane fade" id="navs-top-profile" role="tabpanel">
-                          <p>
-                            Donut dragée jelly pie halvah. Danish gingerbread bonbon cookie wafer candy oat cake ice
-                            cream. Gummies halvah tootsie roll muffin biscuit icing dessert gingerbread. Pastry ice cream
-                            cheesecake fruitcake.
-                          </p>
-                          <p class="mb-0">
-                            Jelly-o jelly beans icing pastry cake cake lemon drops. Muffin muffin pie tiramisu halvah
-                            cotton candy liquorice caramels.
-                          </p>
-                     
-                      </div>
-                        <!-- /상담내용 -->
+                        <tr>
+                          <td>
+                        자격증
+                          </td>
+                          <th colspan="3">컨벤션기획사2급 필기</th>
+                        </tr>
+
+                        <tr>
+                          <td>
+                        희망지역
+                          </td>
+                          <th colspan="3">서울, 광주</th>
+                        </tr>
+                      
+                        <tr>
+                          <td>
+                        희망직무
+                          </td>
+                          <th colspan="3">기획, 마케팅, 프론트엔드</th>
+                        </tr>
+
+                        <tr>
+                          <td>
+                        취업기업명
+                          </td>
+                        <td>-</td>
+                            <td>
+                             입사일자
+                            </td>
+                            <td>-</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!--/ Bordered Table -->
+
+<!-- 
+
+                  <div class="container">
+                  <dl class="row mt-2">
+                   
+                    <div class="col-sm-2 box" style="">교육기간</div>
+                    <div class="col-sm-9 box" style="">2021.11.15 - 2022.04.27</div>
+                    
+
+                    <div class="row">
+                    <div class="col-sm-2 box" style="width: 139px;">이름</div>
+                    <div class="col-sm-3 box" style="">권우진</div>
+
+                    <div class="col-sm-2 box" style="">생년월일</div>
+                    <div class="col-sm-4 box" style="width:288px">950809</div>
+
+                  </div>
+                  <div class="col-sm-2 box" style="">연락처</div>
+                  <div class="col-sm-9 box" style="">010-7745-8585</div>
+
+                    <div class="col-sm-2 box">담임</div>
+                    <div class="col-sm-9 box">박병관</div>
+
+                    <div class="col-sm-2 box">주소</div>
+                    <div class="col-sm-9 box">부산광역시 해운대구 세실로 138</div>
+
+                    <div class="col-sm-2 box">현주소</div>
+                    <div class="col-sm-9 box">광주광역시 동구 동명로 25번길 7-8</div>
+                
+                    
+                    <div class="row">
+                      <div class="col-sm-2 box" style="width:139px">학력</div>
+                      <div class="col-sm-3 box">대졸</div>
+
+                      <div class="col-sm-2 box">전공</div>
+                      <div class="col-sm-4 box" style="width: 288px;">호텔경영학과</div>
+
+                  </div>
+
+                    <div class="col-sm-2 box">자격증</div>
+                    <div class="col-sm-9 box">컨벤션기획사2급필기</div>
+
+                    <div class="col-sm-2 box">희망지역</div>
+                    <div class="col-sm-9 box">서울, 광주</div>
+
+                    <div class="col-sm-2 box">희망직무</div>
+                    <div class="col-sm-9 box">기획, 마케팅, 프론트엔드</div>
+
+                    </dl>
+                    <dt class="col-sm-1">지원파일</dt>
+                   
+                    <dd class="col-sm-9"> 
+                      <form action="" method="post" enctype="multipart/form-data" name=""><input
+                      type="file"
+                      name="Filename"
+                      multiple
+                    /></dd>
+                  </form>
+                  </dl>
+                </div>
+              </div> -->
+
+  <!-- Bootstrap Table with Caption -->
+  <div class="card">
+    <h3 class="card-header">상담기록</h3>
+    <div class="table-responsive text-nowrap">
+      <table class="table">
+        <caption class="ms-4">
+          
+        </caption>
+        <thead>
+          <tr>
+            <th style="width:10px">일자</th>
+            <th style="width:10px">상담자</th>
+            <th>상담내용</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>-</strong></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Bootstrap Table with Caption -->
+              
+              
                       
                     </div>
                   </div>
