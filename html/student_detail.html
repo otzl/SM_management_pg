@@ -63,7 +63,7 @@
     <script src="../assets/js/config.js"></script>
   </head>
 
-  <body>
+  <>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
@@ -138,62 +138,72 @@
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
-            <!-- 메인 -->
-            <li class="menu-item">
-              <a href="detailMain.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">메인</div>
-              </a>
-            </li>
-
-            
-            <!-- 훈련생관리 -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">훈련생 관리</span></li>
-            <!-- 훈련생 토글 -->
-            <li class="menu-item active">
-              <a href="javascript:void(0)" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-box"></i>
-                <div data-i18n="User interface">훈련생 관리</div>
-              </a>
-              <!-- 훈련생 하위메뉴 -->
-              <ul class="menu-sub">
+                <!-- 메인 -->
+                <li class="menu-item">
+                  <a href="detailMain.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                    <div data-i18n="Analytics">메인</div>
+                  </a>
+                </li>
+    
+                
+                <!-- 훈련생관리 -->
+                <li class="menu-header small text-uppercase"><span class="menu-header-text">훈련생 관리</span></li>
+                <!-- 훈련생 토글 -->
                 <li class="menu-item active">
-                  <a href="all-student.html" class="menu-link">
-                    <div data-i18n="Accordion">전체 훈련생</div>
+                  <a href="javascript:void(0)" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-box"></i>
+                    <div data-i18n="User interface">훈련생 관리</div>
                   </a>
+                  <!-- 훈련생 하위메뉴 -->
+                  <ul class="menu-sub">
+                    <li class="menu-item active">
+                      <a href="all-student.html" class="menu-link">
+                        <div data-i18n="Accordion">전체 훈련생</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="cgi-student.html" class="menu-link">
+                        <div data-i18n="Accordion">CGI 훈련생</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="campus-student.html" class="menu-link">
+                        <div data-i18n="Accordion">캠퍼스 훈련생</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="branch-student.html" class="menu-link">
+                        <div data-i18n="Accordion">서구 훈련생</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="branch-student.html" class="menu-link">
+                        <div data-i18n="Accordion">순천 훈련생</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="branch-student.html" class="menu-link">
+                        <div data-i18n="Accordion">서울 훈련생</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="AI-student.html" class="menu-link">
+                        <div data-i18n="Accordion">인공지능사관학교 훈련생</div>
+                      </a>
+                    </li>
+                    <!-- <li class="menu-item">
+                      <a href="ui-alerts.html" class="menu-link">
+                        <div data-i18n="Alerts">훈련생 상담</div>
+                      </a>
+                    </li> -->
+                    <li class="menu-item">
+                      <a href="statistic.html" class="menu-link">
+                        <div data-i18n="Badges">훈련생 통계</div>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="menu-item">
-                  <a href="cgi-student.html" class="menu-link">
-                    <div data-i18n="Accordion">CGI 훈련생</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="campus-student.html" class="menu-link">
-                    <div data-i18n="Accordion">캠퍼스 훈련생</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="branch-student.html" class="menu-link">
-                    <div data-i18n="Accordion">분원 훈련생</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href=AI-student.html" class="menu-link">
-                    <div data-i18n="Accordion">인공지능사관학교 훈련생</div>
-                  </a>
-                </li>
-                <!-- <li class="menu-item">
-                  <a href="ui-alerts.html" class="menu-link">
-                    <div data-i18n="Alerts">훈련생 상담</div>
-                  </a>
-                </li> -->
-                <li class="menu-item">
-                  <a href="statistic.html" class="menu-link">
-                    <div data-i18n="Badges">훈련생 통계</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
 
             <!-- 협약기업 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">협약 기업</span></li>
@@ -278,18 +288,129 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
-
             <div class="container-xxl flex-grow-1 container-p-y">
               <h2 class="fw-bold py-3 mb-4">교육생 카드</h2>
               
- 
               <!-- Hoverable Table rows -->
-              <div class="card">
-                <div class="card-body" style="padding-bottom:0px">
-                <img src="1.jpg" class="" style="border:1px solid black; width: 135px; height: 178px;"></img></div>
+                  <div class="col-xl-12">
+                   
+                    <div class="nav-align-top mb-4">
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link active"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-top-home"
+                            aria-controls="navs-top-home"
+                            aria-selected="true"
+                          >
+                            기본정보
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-top-profile"
+                            aria-controls="navs-top-profile"
+                            aria-selected="false"
+                          >
+                            상담내용
+                          </button>
+                        </li>
+                      
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active container" id="navs-top-home" role="tabpanel">
+                          <img src="1.jpg" style="border:1px solid black; width: 135px; height: 178px;" align="left"></img>
+                          <dl class="row mt-2">
+                            <dt class="col-sm-1">과정명</dt>
+                            <dd class="col-sm-11">[K-디지털] 빅데이터 분석서비스 개발자과정 8회차</dd>
+        
+                            <dt class="col-sm-1">교육기간</dt>
+                            <dd class="col-sm-11">2021.11.15 - 2022.04.27</dd>
+        
+                            <div class="row">
+                            <dt class="col-sm-1">이름</dt>
+                            <dd class="col-sm-1">권우진</dd>
 
-                <div class="card-body">
-                  <h3>권우진</h3>
+                            <dt class="col-sm-1">생년월일</dt>
+                            <dd class="col-sm-1">950809</dd>
+
+                          </div>
+                          <dt class="col-sm-1">연락처</dt>
+                          <dd class="col-sm-11">010-7745-8585</dd>
+
+                            <dt class="col-sm-1">담임</dt>
+                            <dd class="col-sm-11">박병관</dd>
+        
+                            <dt class="col-sm-1">주소</dt>
+                            <dd class="col-sm-11">부산광역시 해운대구 세실로 138</dd>
+        
+                            <dt class="col-sm-1">현주소</dt>
+                            <dd class="col-sm-11">광주광역시 동구 동명로 25번길 7-8</dd>
+                        
+                            
+                            <div class="row">
+                              <dt class="col-sm-1">학력</dt>
+                              <dd class="col-sm-1">대졸</dd>
+  
+                              <dt class="col-sm-1">전공</dt>
+                              <dd class="col-sm-2">호텔경영학과</dd>
+  
+                       
+
+                            <!-- <dt class="col-sm-1">전공</dt>
+                            <dd class="col-sm-3">호텔경영학과</dd> -->
+                          </div>
+        
+                            <dt class="col-sm-1">자격증</dt>
+                            <dd class="col-sm-11">컨벤션기획사2급필기</dd>
+        
+                            <dt class="col-sm-1">희망지역</dt>
+                            <dd class="col-sm-11">서울, 광주</dd>
+        
+                            <dt class="col-sm-1">희망직무</dt>
+                            <dd class="col-sm-11">기획, 마케팅, 프론트엔드</dd>
+        
+                            <dt class="col-sm-1">지원이력</dt>
+                            <dd class="col-sm-11">-</dd>
+        
+                            <form action="" method="post" enctype="multipart/form-data" name="">
+                            <dt class="col-sm-1">지원파일</dt>
+                            <br>
+                            <dd class="col-sm-11"> <input
+                              type="file"
+                              name="Filename"
+                              multiple
+                            /></dd>
+                          </form>
+                          </dl>
+                        </div>
+                        
+                        <!-- 상담내용 -->
+                        <div class="tab-pane fade" id="navs-top-profile" role="tabpanel">
+                          <p>
+                            Donut dragée jelly pie halvah. Danish gingerbread bonbon cookie wafer candy oat cake ice
+                            cream. Gummies halvah tootsie roll muffin biscuit icing dessert gingerbread. Pastry ice cream
+                            cheesecake fruitcake.
+                          </p>
+                          <p class="mb-0">
+                            Jelly-o jelly beans icing pastry cake cake lemon drops. Muffin muffin pie tiramisu halvah
+                            cotton candy liquorice caramels.
+                          </p>
+                     
+                      </div>
+                        <!-- /상담내용 -->
+                      
+                    </div>
+                  </div>
+
+                  <!-- <h3>권우진</h3>
                   <dl class="row mt-2">
                     <dt class="col-sm-1">과정명</dt>
                     <dd class="col-sm-11">[K-디지털] 빅데이터 분석서비스 개발자과정 8회차</dd>
@@ -331,106 +452,25 @@
                       multiple
                     /></dd>
                   </form>
-
-                   
-
-                    <!-- <dt class="col-sm-1">담임</dt>
-                    <dd class="col-sm-11">박병관</dd>
-
-                    <dt class="col-sm-1">담임</dt>
-                    <dd class="col-sm-11">박병관</dd> -->
-
-                    <!-- <dt class="col-sm-1">담임</dt>
-                    <dd class="col-sm-11">박병관</dd>
-
-                    <dt class="col-sm-1">담임</dt>
-                    <dd class="col-sm-11">박병관</dd> -->
-
-
-
-
-
-
-                  
-
-                 
-
-                    <!-- <dt class="col-sm-3">Nesting</dt>
-                    <dd class="col-sm-9">
-                      <dl class="row">
-                        <dt class="col-sm-4">Nested definition list</dt>
-                        <dd class="col-sm-8">
-                          Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
-                        </dd>
-                      </dl>
-                    </dd> -->
                   </dl>
+                </div> -->
                 </div>
-
-
-
-                <!-- <div class="card-body">
-                  <ul class="list-unstyled mt-2">
-                    <li>전공</li>
-                      <ul>
-                        <li>호텔경영학과</li>
-                      </ul>
-
-                      <li>자격증</li>
-                      <ul>
-                        <li>컨벤션기획사2급필기</li>
-                      </ul>
-
-                      <li>담임</li>
-                      <ul>
-                        <li>박병관</li>
-                      </ul>
-
-                      <li>수강반</li>
-                      <ul>
-                        <li>빅데이터 분석서비스 개발자과정 8회차</li>
-                      </ul>
-
-                  </ul>
-              </div> -->
-                
-               
-
-              </div>
               <!--/ Hoverable Table rows -->
-              <br><br>
+           
               <div class="text-center">
               <button type="button" class="btn rounded-pill btn-outline-primary">돌아가기</button>
             </div>
               <hr class="my-5" />
-              
-
-
             </div>
             <!-- / Content -->
-
-            
-
           </div>
           <!-- Content wrapper -->
         </div>
         <!-- / Layout page -->
       </div>
 
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
-    </div>
-    <!-- / Layout wrapper -->
-
-    <!-- <div class="buy-now">
-        <a
-          href="#"
-          target="_blank"
-          class="btn btn-primary btn-buy-now"
-          >↑맨위로 이동</a
-        >
-      </div> -->
-
+     
+  
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
