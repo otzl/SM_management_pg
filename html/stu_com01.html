@@ -53,6 +53,8 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -198,7 +200,7 @@
             <!-- 협약기업 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">협약 기업</span></li>
             <!-- 협약기업관리 토글 -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Elements">협약기업 관리</div>
@@ -210,20 +212,20 @@
                     <div data-i18n="Basic Inputs">협약기업 요약</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="forms-input-groups.html" class="menu-link">
                     <div data-i18n="Input groups">협약기업 관리</div>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Layouts">훈련생&협약기업 관리</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="form-layouts-vertical.html" class="menu-link">
                     <div data-i18n="Vertical Form">협약기업 채용현황</div>
                   </a>
@@ -313,151 +315,172 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">협약기업관리/</span> 협약기업 상세 페이지</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">훈련생&협약기업관리/</span> 협약기업 채용현황</h4>
               <div class="row">
-                <div class="col-md-12">
-                  <div class="card mb-4">
-                    <!-- 회사명 -->
-                    <h2 class="card-header">(오)지윤소프트</h2>
-                    <!-- Account -->
-                    <div class="card-body">
-                      <div class="d-flex align-items-start align-items-sm-center gap-4">
-                        <img src="../assets/img/elements/13.jpg" alt="user-avatar" class="d-block rounded" height="100" width="200"
-                          id="uploadedAvatar" />
-                        <div class="button-wrapper">
-                          <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
-                            <span class="d-none d-sm-block">기업로고 이미지 등록</span>
-                            <i class="bx bx-upload d-block d-sm-none"></i>
-                            <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          </label>
-                          <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                            <i class="bx bx-reset d-block d-sm-none"></i>
-                            <span class="d-none d-sm-block">Reset</span>
-                          </button>
-
-                          <p class="text-muted mb-0">JPG, GIF or PNG 허용. 최대 사이즈 800K</p>
+                <!-- Total Revenue -->
+                <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
+                  <div class="card">
+                    <div class="row row-bordered g-0">
+                      <div class="col-md-8">
+                        <h5 class="card-header m-0 me-2 pb-3">협약기업 훈련생 취업자 통계</h5>
+                        
+                        <div id="totalRevenueChart" class="px-2"></div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body">
+                          <div class="text-center">
+                            <div class="dropdown">
+                              <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="growthReportId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                2022
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
+                                <a class="dropdown-item" href="javascript:void(0);">2021</a>
+                                <a class="dropdown-item" href="javascript:void(0);">2020</a>
+                                <a class="dropdown-item" href="javascript:void(0);">2019</a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                        <div id="growthChart"></div>
+                        <div class="text-center fw-semibold pt-3 mb-2" style="margin-top:45px">62% Company Growth</div>
+              
+              
                       </div>
                     </div>
-                    <hr class="my-0" />
-                    <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div class="row">
-                          <div class="mb-3 col-md-6">
-                            <label for="owner" class="form-label">대표자</label>
-                            <input class="form-control" type="text" id="owner" name="owner" value="오지윤" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="company_register" class="form-label">사업자등록번호</label>
-                            <input class="form-control" type="text" name="company_register" id="company_register" value="000-000-000000" />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="company_homepage" class="form-label">홈페이지</label>
-                            <input class="form-control" type="text" id="company_homepage" name="company_homepage" value="https://www.jiyun.com/"
-                              placeholder="https://www.jiyun.com/" />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="company_workers" class="form-label">상시근로자수</label>
-                            <input type="text" class="form-control" id="company_workers" name="company_workers" value="00명" />
-                          </div>
-                          <div class="mb-3 col-md-8">
-                            <label for="company_address" class="form-label">주소</label>
-                            <input type="text" class="form-control" id="company_address" name="company_address" value="광주광역시 남구 송암로60, CGI센터 2층" />
-                          </div>
-                          <div class="mb-3 col-md-2 nav-align-bottom"><button type="button" class="btn rounded-pill btn-outline-primary">주소 추가</button></div>
-                          <div class="mb-3 col-md-8">
-                            <input type="text" class="form-control" id="company_address2" name="company_address" value="광주광역시 동구 예술길 31-15 3~5, 7층" />
-                          </div>
-                          <div class="mb-3 col-md-12">
-                            <label class="form-label" for="company_manager">기업 담당자</label>
-                            <table class="table" id="company_manager">
-                                <thead>
-                                  <tr>
-                                    <td>성명</td>
-                                    <td>직책</td>
-                                    <td>연락처</td>
-                                    <td>Email</td>
-                                    <td>비고</td>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- 내용1 -->
-                                  <tr>
-                                    <td><input class="form-control" type="text" name="company_m_name" value="오지윤" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_position" value="대표이사" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-1234-1234" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_email" value="ohjiyun@jiyunsoft.com" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_remark" value="최종성과발표회만 참석" autofocus /></td>
-                                  </tr>
-                                  <!-- /내용1 -->
-                                  <!-- 내용2 -->
-                                  <tr>
-                                    <td><input class="form-control" type="text" name="company_m_name" value="윤지오" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_position" value="팀장" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-5678-5678" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_email" value="jiyunoh@jiyunsoft.com" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_remark" value="인사담당자 주로 연락담당" autofocus /></td>
-                                  </tr>
-                                  <!-- /내용2 -->
-                                  <tr>
-                                    <td colspan="5"><button class="btn rounded-pill btn-outline-primary">담당자 추가</button></td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                          </div>
-                          <div class="mb-3 col-md-4">
-                            <label for="company_region" class="form-label">지역구분</label>
-                            <input type="text" class="form-control" id="company_region" name="company_region" placeholder="광주" />
-                          </div>
-                          <div class="mb-3 col-md-4">
-                            <label for="company_category" class="form-label">업종/업태</label>
-                            <input type="text" class="form-control" id="company_category" name="company_category" placeholder="AI 소프트웨어 개발" />
-                          </div>
-                          <div class="mb-3 col-md-4">
-                            <label for="company_course" class="form-label">관련 과정구분</label>
-                            <select class="select2 form-select" id="company_course">
-                              <option value="">관련 과정 선택</option>
-                              <option value="bigdata">빅데이터</option>
-                              <option value="ai">인공지능</option>
-                              <option value="iot">사물인터넷(IoT)</option>
-                            </select>
-                          </div>
-                          <div class="mb-3 col-md-8">
-                            <label for="company_recruit" class="form-label">채용 분야</label>
-                            <input type="text" class="form-control" id="company_recruit" name="company_recruit" placeholder="Java개발자, SQL 가능자" maxlength="6" />
-                          </div>
-                          <div class="mb-3 col-md-8">
-                            <label for="company_papers" class="form-label">협약서 등록</label>
-                            <input type="file" class="form-control" id="company_papers"/>
-                          </div>
-                        </div>
-                        <div class="mt-2">
-                          <button type="submit" class="btn btn-primary me-2">수정하기</button>
-                          <button type="reset" class="btn btn-outline-secondary">취소</button>
-                        </div>
-                      </form>
-                    </div>
-                    <!-- /Account -->
-                  </div>
-                  <div class="card">
-                    <h5 class="card-header">협약 기업 관리 내역</h5>
-                    <div class="card-body">
-                      <form action="" method="post">
-                        <div class="mb-3 col-12 mb-0">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">많은 인원 채용 예정.</textarea>
-                        </div>
-                        <div class="mb-3 col-12 mb-0">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">스터디랩 신청함</textarea>
-                        </div>
-                        <div class="mt-2">
-                          <button type="submit" class="btn btn-primary me-2">수정하기</button>
-                          <button type="reset" class="btn btn-outline-secondary">취소</button>
-                        </div>
-                      </form>
-                    </div><!-- /card-body -->
                   </div>
                 </div>
+                <!--/ Total Revenue -->
               </div>
+              <!-- Hoverable Table rows -->
+              <div class="card">
+                <h5 class="card-header">협약기업 채용현황</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>기업명</th>
+                        <th>지역</th>
+                        <th>이름</th>
+                        <th>연락처</th>
+                        <th>입사날짜</th>
+                        <th>수정/삭제</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>(주)오지윤</td>
+                        <td>광주</td>
+                        <td><a href="student_detail.html">오지윤</a></td>
+                        <td>010-1234-1234</td>
+                        <td>2022-06-02</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="later-delete">
+                        <td>(주)오지윤</td>
+                        <td>광주</td>
+                        <td><a href="student_detail.html">오지윤</a></td>
+                        <td>010-1234-1234</td>
+                        <td>2022-06-02</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="later-delete">
+                        <td>(주)오지윤</td>
+                        <td>광주</td>
+                        <td><a href="student_detail.html">오지윤</a></td>
+                        <td>010-1234-1234</td>
+                        <td>2022-06-02</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="later-delete">
+                        <td>(주)오지윤</td>
+                        <td>광주</td>
+                        <td><a href="student_detail.html">오지윤</a></td>
+                        <td>010-1234-1234</td>
+                        <td>2022-06-02</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="demo-inline-spacing">
+                <!-- Basic Pagination -->
+                <nav aria-label="Page navigation">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item first">
+                      <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
+                    </li>
+                    <li class="page-item prev">
+                      <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-left"></i></a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="javascript:void(0);">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="javascript:void(0);">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="javascript:void(0);">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="javascript:void(0);">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="javascript:void(0);">5</a>
+                    </li>
+                    <li class="page-item next">
+                      <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-right"></i></a>
+                    </li>
+                    <li class="page-item last">
+                      <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
+                    </li>
+                  </ul>
+                </nav>
+                <!--/ Basic Pagination -->
+              </div>
+              </div>
+              <!--/ Hoverable Table rows -->
+
               
               <hr class="my-5" />
 
@@ -500,11 +523,13 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
+    <script src="../assets/js/dashboards-analytics.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

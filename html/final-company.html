@@ -198,7 +198,7 @@
             <!-- 협약기업 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">협약 기업</span></li>
             <!-- 협약기업관리 토글 -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Elements">협약기업 관리</div>
@@ -210,25 +210,27 @@
                     <div data-i18n="Basic Inputs">협약기업 요약</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="forms-input-groups.html" class="menu-link">
                     <div data-i18n="Input groups">협약기업 관리</div>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item">
+            <!-- 훈련생&협약기업관리 토글-->
+            <li class="menu-item active">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Layouts">훈련생&협약기업 관리</div>
               </a>
+              <!--훈련생&협약기업관리 하위메뉴 -->
               <ul class="menu-sub">
                 <li class="menu-item">
                   <a href="form-layouts-vertical.html" class="menu-link">
                     <div data-i18n="Vertical Form">협약기업 채용현황</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="form-layouts-horizontal.html" class="menu-link">
                     <div data-i18n="Horizontal Form">성과발표회</div>
                   </a>
@@ -313,90 +315,77 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">협약기업관리/</span> 협약기업 상세 페이지</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">훈련생&협약기업관리/</span> 최종성과발표회</h4>
               <div class="row">
+                <!-- 최종성과발표회 명단 -->
                 <div class="col-md-12">
                   <div class="card mb-4">
                     <!-- 회사명 -->
-                    <h2 class="card-header">(오)지윤소프트</h2>
+                    <h2 class="card-header">6월 최종성과물발표회</h2>
                     <!-- Account -->
                     <div class="card-body">
                       <div class="d-flex align-items-start align-items-sm-center gap-4">
-                        <img src="../assets/img/elements/13.jpg" alt="user-avatar" class="d-block rounded" height="100" width="200"
-                          id="uploadedAvatar" />
-                        <div class="button-wrapper">
-                          <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
-                            <span class="d-none d-sm-block">기업로고 이미지 등록</span>
-                            <i class="bx bx-upload d-block d-sm-none"></i>
-                            <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          </label>
-                          <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                            <i class="bx bx-reset d-block d-sm-none"></i>
-                            <span class="d-none d-sm-block">Reset</span>
-                          </button>
-
-                          <p class="text-muted mb-0">JPG, GIF or PNG 허용. 최대 사이즈 800K</p>
-                        </div>
                       </div>
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div class="row">
-                          <div class="mb-3 col-md-6">
-                            <label for="owner" class="form-label">대표자</label>
-                            <input class="form-control" type="text" id="owner" name="owner" value="오지윤" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="company_register" class="form-label">사업자등록번호</label>
-                            <input class="form-control" type="text" name="company_register" id="company_register" value="000-000-000000" />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="company_homepage" class="form-label">홈페이지</label>
-                            <input class="form-control" type="text" id="company_homepage" name="company_homepage" value="https://www.jiyun.com/"
-                              placeholder="https://www.jiyun.com/" />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="company_workers" class="form-label">상시근로자수</label>
-                            <input type="text" class="form-control" id="company_workers" name="company_workers" value="00명" />
-                          </div>
-                          <div class="mb-3 col-md-8">
-                            <label for="company_address" class="form-label">주소</label>
-                            <input type="text" class="form-control" id="company_address" name="company_address" value="광주광역시 남구 송암로60, CGI센터 2층" />
-                          </div>
-                          <div class="mb-3 col-md-2 nav-align-bottom"><button type="button" class="btn rounded-pill btn-outline-primary">주소 추가</button></div>
-                          <div class="mb-3 col-md-8">
-                            <input type="text" class="form-control" id="company_address2" name="company_address" value="광주광역시 동구 예술길 31-15 3~5, 7층" />
-                          </div>
                           <div class="mb-3 col-md-12">
-                            <label class="form-label" for="company_manager">기업 담당자</label>
-                            <table class="table" id="company_manager">
+                            <label class="form-label" for="final-company">심사 및 참관 명단</label>
+                            <table class="table" id="final-company">
                                 <thead>
                                   <tr>
-                                    <td>성명</td>
+                                    <td>지역</td>
+                                    <td class="col-sm-1">No</td>
+                                    <td>기업명</td>
+                                    <td>참석자</td>
                                     <td>직책</td>
-                                    <td>연락처</td>
-                                    <td>Email</td>
+                                    <td>6/22</td>
                                     <td>비고</td>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <!-- 내용1 -->
-                                  <tr>
-                                    <td><input class="form-control" type="text" name="company_m_name" value="오지윤" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_position" value="대표이사" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-1234-1234" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_email" value="ohjiyun@jiyunsoft.com" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_remark" value="최종성과발표회만 참석" autofocus /></td>
-                                  </tr>
+                                  <!-- <tr>
+                                    <td><input class="form-control" type="text" name="company_fin_region" value="광주" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_no" value="1" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_c_name" value="(오)지윤소프트" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_m_name" value="오지윤" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_m_position" value="대표이사" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_m_tel" value="010-1234-1234" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_m_email" value="ohjiyun@jiyunsoft.com" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_jdgObs" value="심사" autofocus /></td>
+                                    <td><input class="form-control" type="text" name="company_fin_m_remark" value="최종성과발표회만 참석" autofocus /></td>
+                                  </tr> -->
                                   <!-- /내용1 -->
                                   <!-- 내용2 -->
                                   <tr>
-                                    <td><input class="form-control" type="text" name="company_m_name" value="윤지오" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_position" value="팀장" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_tel" value="010-5678-5678" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_email" value="jiyunoh@jiyunsoft.com" autofocus /></td>
-                                    <td><input class="form-control" type="text" name="company_m_remark" value="인사담당자 주로 연락담당" autofocus /></td>
+                                    <td>광주</td>
+                                    <td>2</td>
+                                    <td>(오)지윤소프트</td>
+                                    <td data-toggle="collapse"  class="accordion-toggle" data-target="#demo1">
+                                      <a href="#">오지윤</a>
+                                    </td>
+                                    <td>대표이사</td>
+                                    <td>심사</td>
+                                    <td>최종성과발표회만 참석</td>
+                                  </tr>
+                                  <tr class="hidden_tr">
+                                    <td class="hidden_td hidden-Row" colspan="12">
+                                      <div class="accordian-body collapse" id="demo1">
+                                        <table>
+                                            <tr>
+                                              <td>연락처</td>
+                                              <td>Email</td>
+                                            </tr>
+                                            <tr>
+                                              <td>연락처</td>
+                                              <td>Email</td>
+                                            </tr>
+                                        </table>
+                                      </div>
+                                    </td>
                                   </tr>
                                   <!-- /내용2 -->
                                   <tr>
@@ -439,7 +428,10 @@
                     </div>
                     <!-- /Account -->
                   </div>
-                  <div class="card">
+                </div><!-- /최종성과발표회 명단 -->
+                <!-- 사전기업설명회 -->
+                <div class="col-md-8">
+                  <div class="card ">
                     <h5 class="card-header">협약 기업 관리 내역</h5>
                     <div class="card-body">
                       <form action="" method="post">
@@ -457,6 +449,7 @@
                     </div><!-- /card-body -->
                   </div>
                 </div>
+                <!-- /사전기업설명회 -->
               </div>
               
               <hr class="my-5" />
