@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Tables - Basic Tables | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>스인개_취업사이트</title>
 
     <meta name="description" content="" />
 
@@ -138,19 +138,19 @@
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
-               <!-- 메인 -->
-               <li class="menu-item">
-                <a href="detailMain.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                  <div data-i18n="Analytics">메인</div>
-                </a>
-              </li>
-  
-              
-              <!-- 훈련생관리 -->
+            <!-- 메인 -->
+            <li class="menu-item">
+              <a href="detailMain.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">메인</div>
+              </a>
+            </li>
+
+            
+            <!-- 훈련생관리 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">훈련생 관리</span></li>
             <!-- 훈련생 토글 -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="User interface">훈련생 관리</div>
@@ -187,7 +187,7 @@
                     <div data-i18n="Accordion">서울 훈련생</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="AI-student.html" class="menu-link">
                     <div data-i18n="Accordion">인공지능사관학교 훈련생</div>
                   </a>
@@ -248,15 +248,15 @@
             <!-- 채용게시판 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">채용게시판</span></li>
             <!-- 채용게시판 토글 -->
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="User interface">채용게시판</div>
               </a>
               <!-- 채용게시판 하위메뉴 -->
               <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="ui-accordion.html" class="menu-link">
+                <li class="menu-item active">
+                  <a href="career-board.html" class="menu-link">
                     <div data-i18n="Accordion">채용 공고</div>
                   </a>
                 </li>
@@ -311,7 +311,78 @@
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
-              
+                <!-- Place this tag where you want the button to render. -->
+                <li class="nav-item lh-1 me-3">
+                  <a
+                    class="github-button"
+                    href="https://github.com/themeselection/sneat-html-admin-template-free"
+                    data-icon="octicon-star"
+                    data-size="large"
+                    data-show-count="true"
+                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
+                    >Star</a
+                  >
+                </li>
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <span class="d-flex align-items-center align-middle">
+                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
               </ul>
             </div>
           </nav>
@@ -323,188 +394,53 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">훈련생관리/</span> 인공지능사관학교 훈련생 명단</h4>
-              
- 
-              <!-- Hoverable Table rows -->
-              <div class="card">
-                <h5 class="card-header">스마트인재개발원 인공지능사관학교 훈련생 명단</h5>
-                <div class="table-responsive text-nowrap">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th><i class="fab fa-angular fa-lg text-danger me-3"></i>이름</th>
-                        <th>거주</th>
-                        <th>연락처</th>
-                        <th>성별</th>
-                        <th>생년월일</th>
-                        <th>학교</th>
-                      
-                        <th>진행상태</th>
-                        <th>훈련대상구분</th>
-                        <th>구분</th>
-                       <th>비고</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> 권우진</td>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle" style="font-size: 30px;">상담기록</h5>
-                                <button
-                                  type="button"
-                                  class="btn-close"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"
-                                ></button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="row">
-                                  <div class="col mb-3">
-                                    <p><textarea class="form-control" placeholder="내용입력" rows="5"></textarea></p>
-                                  </div>
-                                </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                                 취소
-                                </button>
-                                <button type="button" class="btn btn-primary">저장</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">채용게시판 /</span> 채용공고</h4>
+
+              <!-- 공고 카드 영역-->
+              <div class="row mb-5">
+                <!-- 공고 한개의 카드 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h7 class="nav-align-right">No.1</h7>
+                      <h4 class="card-title">(오)지윤소프트</h4>
+                      <div class="card-subtitle text-muted mb-3"><a href="#" class="card-link">홈페이지로 이동</a></div>
+                      <p class="card-text">
+                        현재 지원현황
+                      </p>
+                      <dl class="row mt-2">
+                        <dt class="col-sm-4">등록</dt>
+                        <dd class="col-sm-8">22.07.25</dd>
+                        <dt class="col-sm-4">마감</dt>
+                        <dd class="col-sm-8">22.08.13</dd>
+                        <dt class="col-sm-4">상시근로자수</dt>
+                        <dd class="col-sm-8">30명</dd>
+                        <dt class="col-sm-4">채용인원</dt>
+                        <dd class="col-sm-8">2명</dd>
+                        <dt class="col-sm-4">직무</dt>
+                        <dd class="col-sm-8">웹개발자,JAVA개발자</dd>
+                        <dt class="col-sm-4">지원자격</dt>
+                        <dd class="col-sm-8">4년제 대졸<br>정보처리기사 보유</dd>
+                        <dt class="col-sm-4">우대사항</dt>
+                        <dd class="col-sm-8">spring 프로젝트 개발경험</dd>
+                        <dt class="col-sm-4">학력</dt>
+                        <dd class="col-sm-8">대졸</dd>
+                        <dt class="col-sm-4">급여</dt>
+                        <dd class="col-sm-8">연봉 2,800만원</dd>
+                      </dl>
+                      <a href="#">자세한 내용 확인하기</a>
+                      <h6 class="nav-align-right text-danger">긴급</h6>
                     </div>
-                        
-                        </td>
-                        <td>부산</td>
-                        <td>
-                          010-7745-8585
-                        </td>
-                        <td>여</td>
-                        <td>950809</td>
-                        <td>동명대학교</td>
-                      
-                        <td>수료
-                        </td>
-                        <td>실업자</td>
-                        <td><span class="badge bg-label-warning me-1">취업</span></td>
-                        <td><strong type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#modalCenter">상담기록</strong></td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>홍길동</td>
-                        <td>광주</td>
-                        <td>
-                          010-1234-5678
-                        </td>
-                        <td>남</td>
-                        <td>920329</td>
-                        <td>고려대학교</td>
-                        
-                        <td>수강중</td>
-                        <td>재직자</td>
-                        <td><span class="badge bg-label-info me-1">희망</span></td>
-                        <td><strong type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#modalCenter">상담기록</strong></td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                   
-                    </tbody>
-                  </table>
-                </div>
-                <div class="demo-inline-spacing">
-                    <!-- Basic Pagination -->
-                    <nav aria-label="Page navigation">
-                      <ul class="pagination justify-content-center">
-                        <li class="page-item first">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevrons-left"></i
-                          ></a>
-                        </li>
-                        <li class="page-item prev">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevron-left"></i
-                          ></a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="javascript:void(0);">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">4</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">5</a>
-                        </li>
-                        <li class="page-item next">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevron-right"></i
-                          ></a>
-                        </li>
-                        <li class="page-item last">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevrons-right"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </nav>
-                    <!--/ Basic Pagination -->
                   </div>
+                </div>
+                <!-- /공고 한개의 카드 -->
               </div>
-              <!--/ Hoverable Table rows -->
-
-              
-              <hr class="my-5" />
-
+              <!-- /공고 카드 영역-->
 
 
             </div>
             <!-- / Content -->
 
-            
 
             <div class="content-backdrop fade"></div>
           </div>
@@ -519,13 +455,13 @@
     <!-- / Layout wrapper -->
 
     <div class="buy-now">
-        <a
-          href="#"
-          target="_blank"
-          class="btn btn-primary btn-buy-now"
-          >↑맨위로 이동</a
-        >
-      </div>
+      <a
+        href="#"
+        target="_blank"
+        class="btn btn-primary btn-buy-now"
+        >↑맨위로 이동</a
+      >
+    </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -538,6 +474,7 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/masonry/masonry.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>

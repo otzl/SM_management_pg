@@ -483,6 +483,10 @@ progress {
   display: none !important;
 }
 
+.hidden-Row {
+  padding: 0 !important;
+}
+
 .lead {
   font-size: 1.0546875rem;
   font-weight: 400;
