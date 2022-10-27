@@ -54,7 +54,7 @@
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
     <!-- Page CSS -->
-
+    <link rel="stylesheet" href="../assets/vendor/css/pages/career-board.css" />
     <!-- Helpers -->
     <script src="../assets/vendor/js/helpers.js"></script>
 
@@ -329,98 +329,61 @@
                 <div class="col-md-12">
                   <div class="card mb-4">
                     <!-- 00월 최종성과물발표회 나올 공간 -->
-                    <h2 class="card-header">스마트인재개발원 채용 게시판</h2>
+                    <h2 class="card-header">스마트인재개발원 채용 게시판(22.10.26기준)</h2>
                     <hr class="my-0" />
                     <!-- 게시판 테이블 -->
                     <div class="card-body">
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div class="row">
                           <div class="mb-3 col-md-12">
-                            <label class="form-label" for="final-company">업데이트 기준 22.10.21</label><br>
-                            <label class="form-label" for="final-company">해당 공고에 대한 지원은 업체명을 클릭하여 상세보기로 들어가<br>
-                              <strong class="text-decoration-underline">이력서, 자기소개서, 포트폴리오</strong> 첨부 부탁드립니다.</label><br>
+                            <label class="form-label" for="final-company">해당 공고에 대한 지원은 업체명을 클릭하여 상세보기로 들어가</label><br>
+                            <label class="form-label" for="final-company"><strong class="text-decoration-underline">이력서, 자기소개서, 포트폴리오</strong> 첨부 부탁드립니다.</label><br>
                             <label class="form-label" for="final-company">지원에 대한 결과는 채용 결과 탭에서 확인하실 수 있습니다.</label>
                             <table class="table" id="final-company">
                                 <thead>
-                                  <tr무>
+                                  <tr>
                                     <td class="col-sm-1">구분</td>
-                                    <td>등록일</td>
-                                    <td>마감일</td>
-                                    <td>업체명</td>
-                                    <td>근로자수</td>
-                                    <td>직무</td>
-                                    <td>근무지</td>
-                                    <td>연봉</td>
+                                    <td>제목</td>
+                                    <td>진행상태</td>
+                                    <td>접수기간</td>
                                     <td>지원중</td>
-                                  </tr무
+                                  </tr>
                                 </thead>
                                 <tbody>
                                   <!-- 내용1 -->
                                   <tr>
-                                    <td>1</td>
-                                    <td>10.20</td>
-                                    <td>10.25</td>
-                                    <td>
-                                      <!-- 업체명을 누르면 공고 자세히 보기로 갈 수 있도록 -->
-                                      <a href="#">(오)지윤소프트</a>
-                                      <a data-bs-toggle="collapse"
-                                      href="#shortContents1"
-                                      role="button"
-                                      aria-expanded="false"
-                                      aria-controls="shortContents1"
-                                      class="btn btn-group-sm"
-                                      >▼</a>
-                                    </td>
-                                    <td>80명</td>
-                                    <td>웹개발</td>
-                                    <td>광주</td>
-                                    <td>2,800만원</td>
-                                    <td>2명</td>
-                                  </tr>
-                                  <!-- 간략보기 내용 -->
-                                  <tr class="hidden_tr col-12">
-                                    <td class="hidden-Row" colspan="2"></td>
-                                    <td class="hidden-Row" colspan="7">
-                                      <div class="accordian-body collapse" id="shortContents1">
-                                        <table class="table table-borderless">
-                                          <tr>
-                                            <td>직무 내용</td>
-                                            <td>소프트웨어 개발<br>근무 시작 : 11월~</td>
-                                          </tr>
-                                          <tr>
-                                            <td>지원자격</td>
-                                            <td>정보처리기사 보유</td>
-                                          </tr>
-                                          <tr>
-                                            <td>학력</td>
-                                            <td>4년제 대졸</td>
-                                          </tr>
-                                          <tr>
-                                            <td>채용인원</td>
-                                            <td>2명</td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                    </td>
-                                    <td class="hidden-Row" colspan="3"></td>
+                                    <td class="col-sm-1 mine-center">1</td>
+                                    <td><a href="#">[(오)지윤 소프트] 웹개발자 채용</a></td>
+                                    <td class="mine-center"><span class="ing-btn">접수중</span></td>
+                                    <td class="mine-center">22.10.21 ~ 22.11.04</td>
+                                    <td class="mine-center">2명</td>
                                   </tr>
                                   <!-- /내용1 -->
+                                  <!-- 내용2 -->
+                                  <tr>
+                                    <td class="col-sm-1 mine-center">2</td>
+                                    <td><a href="#">[(강)벽국 소프트] 순천 데이터 센터 근무자</a></td>
+                                    <td class="mine-center"><span class="end-btn">&nbsp&nbsp마감&nbsp&nbsp</span></td>
+                                    <td class="mine-center">22.10.10 ~ 22.11.10</td>
+                                    <td class="mine-center">4명</td>
+                                  </tr>
+                                  <!-- /내용2 -->
                                   
-                                  <tr><!-- 심사/참관 추가 버튼 -->
+                                  <tr><!-- 채용 공고 추가 버튼 -->
                                     <td colspan="7" class="text-end"><button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-                                      data-bs-target="#basicModal">심사/참관 추가</button></td>
-                                  </tr><!-- /심사/참관 추가 버튼 -->
+                                      data-bs-target="#basicModal">채용공고 추가</button></td>
+                                  </tr><!-- /채용 공고 추가 버튼 -->
                                 </tbody>
                               </table>
                           </div>
                       </form>
-                      <!-- Modal 심사/참관 추가 -->
+                      <!-- Modal 채용공고 추가 -->
                       <div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <form action="" method="post">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel1">심사&참관 추가하기</h5>
+                              <h5 class="modal-title" id="exampleModalLabel1">채용 공고 추가하기</h5>
                               <button
                                 type="button"
                                 class="btn-close"
@@ -431,53 +394,88 @@
                             <div class="modal-body">
                               <div class="row">
                                 <div class="col mb-3">
-                                  <label for="nameBasic" class="form-label">지역</label>
-                                  <input class="form-control" id="nameBasic" type="text" name="company_fin_region" value="광주" autofocus />
-                                </div>
-                                <div class="col mb-3">
-                                  <label for="emailBasic" class="form-label">기업명</label>
-                                  <input class="form-control" type="text" name="company_fin_c_name" value="(오)지윤소프트" autofocus />
+                                  <label for="nameBasic" class="form-label">기업명</label>
+                                  <input class="form-control" type="text" name="career_c_name" value="(오)지윤소프트" autofocus />
                                 </div>
                               </div>
                               <div class="row">
                                 <div class="col mb-3">
-                                  <label for="dobBasic" class="form-label">참석자</label>
-                                  <input class="form-control" type="text" name="company_fin_m_name" value="오지윤" autofocus />
+                                  <label for="nameBasic" class="form-label">홈페이지</label>
+                                  <input class="form-control" id="nameBasic" type="text" name="career_c_homepage" value="http://jiyunsoft.com" autofocus />
                                 </div>
                                 <div class="col mb-3">
-                                  <label for="emailBasic" class="form-label">직책</label>
-                                  <input class="form-control" type="text" name="company_fin_m_position" value="대표이사" autofocus />
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col mb-3">
-                                  <label for="nameBasic" class="form-label">연락처</label>
-                                  <input class="form-control" type="text" name="company_fin_m_tel" value="010-1234-1234" autofocus />
+                                  <label for="emailBasic" class="form-label">상시근로자수</label>
+                                  <input class="form-control" type="text" name="career_c_mem" value="22명" autofocus />
                                 </div>
                               </div>
                               <div class="row">
                                 <div class="col mb-3">
-                                  <label for="nameBasic" class="form-label">Email</label>
-                                  <input class="form-control" type="text" name="company_fin_m_email" value="ohjiyun@jiyunsoft.com" autofocus />
+                                  <label for="nameBasic" class="form-label">연봉</label>
+                                  <input class="form-control" id="nameBasic" type="text" name="career_c_salary" value="3,000만원" autofocus />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="emailBasic" class="form-label">근무지</label>
+                                  <input class="form-control" type="text" name="career_c_region" value="광주" autofocus />
                                 </div>
                               </div>
                               <div class="row">
                                 <div class="col mb-3">
-                                  <label for="nameBasic" class="form-label">심사/참관 구분</label>
-                                  <select name="company_fin_jdgObs" class="form-select">
-                                    <option value="jdg">심사</option>
-                                    <option value="obs">참관</option>
-                                  </select>
+                                  <label for="dobBasic" class="form-label">채용인원</label>
+                                  <input class="form-control" type="text" name="career_c_many" value="2명" autofocus />
                                 </div>
                                 <div class="col mb-3">
-                                  <label for="nameBasic" class="form-label">참여 일자</label>
-                                  <input class="form-control" type="date" name="company_fin_date" autofocus />
+                                  <label for="emailBasic" class="form-label">학력기준</label>
+                                  <input class="form-control" type="text" name="career_c_edu" value="4년제 대졸" autofocus />
                                 </div>
                               </div>
                               <div class="row">
                                 <div class="col mb-3">
-                                  <label for="nameBasic" class="form-label">비고</label>
-                                  <input class="form-control" type="text" name="company_fin_m_remark" value="최종성과발표회만 참석" autofocus />
+                                  <label for="dobBasic" class="form-label">채용담당자</label>
+                                  <input class="form-control" type="text" name="career_c_manager" value="오지윤 대표" autofocus />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="emailBasic" class="form-label">연락처</label>
+                                  <input class="form-control" type="text" name="career_c_tel" value="010-1234-1234" autofocus />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameBasic" class="form-label">이메일</label>
+                                  <input class="form-control" type="text" name="career_c_email" value="ohjiyun@jiyunsoft.com" autofocus />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameBasic" class="form-label">채용 제목</label>
+                                  <input class="form-control" type="text" name="career_c_title" value="[(오)지윤소프트] 웹개발자 채용" autofocus />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameBasic" class="form-label">등록일</label>
+                                  <input class="form-control" type="date" name="career_c_indate" autofocus />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="nameBasic" class="form-label">마감일</label>
+                                  <input class="form-control" type="date" name="career_c_deadline" autofocus />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameBasic" class="form-label">직무내용</label>
+                                  <textarea class="form-control" name="career_c_job_description">웹/앱 기반 서비스 플랫폼 개발</textarea>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameBasic" class="form-label">자격요건</label>
+                                  <textarea class="form-control" name="career_c_job_description">정보처리기사 보유</textarea>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameBasic" class="form-label">우대조건</label>
+                                  <textarea class="form-control" name="career_c_job_description">해당 직무 경험자</textarea>
                                 </div>
                               </div>
                             </div>
@@ -491,123 +489,11 @@
                           </div><!-- /modal-content-->
                         </div>
                       </div>
-                      <!-- /Modal 심사/참관 추가 -->
+                      <!-- /Modal 채용공고 추가 -->
                     </div>
                     <!-- /Account -->
                   </div>
                 </div><!-- /최종성과발표회 명단 -->
-                <!-- 사전기업설명회 -->
-                <div class="col-md-12">
-                  <div class="card ">
-                    <h5 class="card-header">6월 사전기업 설명회 일정</h5>
-                    <div class="card-body">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <td>지역</td>
-                            <td>No</td>
-                            <td>기업명</td>
-                            <td>일자</td>
-                            <td>시간</td>
-                            <td>담당자</td>
-                            <td>직책</td>
-                            <td>발표방법</td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>광주</td>
-                            <td>1</td>
-                            <td>(오)지윤소프트</td>
-                            <td>6/21</td>
-                            <td>10:00</td>
-                            <td>오지윤</td>
-                            <td>대표이사</td>
-                            <td>대면</td>
-                          </tr>
-                          <tr><!-- 사전기업설명회 추가 버튼 -->
-                            <td colspan="8" class="text-end"><button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-                              data-bs-target="#basicModal2">사전기업설명회 추가</button></td>
-                          </tr><!-- 사전기업설명회 추가 버튼 -->
-                        </tbody>
-                      </table>
-                    </div><!-- /card-body -->
-                  </div>
-                </div>
-                <!-- /사전기업설명회 -->
-                <!-- Modal 사전기업설명회 추가 -->
-                <div class="modal fade" id="basicModal2" tabindex="-1" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <form action="" method="post">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel1">사전기업설명회 추가하기</h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="nameBasic" class="form-label">지역</label>
-                            <input class="form-control" id="nameBasic" type="text" name="company_preBrf_region" value="광주" autofocus />
-                          </div>
-                          <div class="col mb-3">
-                            <label for="emailBasic" class="form-label">기업명</label>
-                            <input class="form-control" type="text" name="company_preBrf_c_name" value="(오)지윤소프트" autofocus />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="dobBasic" class="form-label">담당자</label>
-                            <input class="form-control" type="text" name="company_preBrf_m_name" value="오지윤" autofocus />
-                          </div>
-                          <div class="col mb-3">
-                            <label for="emailBasic" class="form-label">직책</label>
-                            <input class="form-control" type="text" name="company_preBrf_m_position" value="대표이사" autofocus />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="nameBasic" class="form-label">발표방법</label>
-                            <select name="company_fin_jdgObs" class="form-select">
-                              <option value="face">대면</option>
-                              <option value="non_face">비대면</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="nameBasic" class="form-label">참여 일자</label>
-                            <input class="form-control" type="date" name="company_preBrf_date" autofocus />
-                          </div>
-                          <div class="col mb-3">
-                            <label for="nameBasic" class="form-label">참여 시간</label>
-                            <input class="form-control" type="time" name="company_preBrf_time" autofocus />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="nameBasic" class="form-label">비고</label>
-                            <input class="form-control" type="text" name="company_preBrf_remark" value="양쪽반 따로" autofocus />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                          취소
-                        </button>
-                        <button type="submit" class="btn btn-primary">등록하기</button>
-                      </div>
-                    </form>
-                    </div><!-- /modal-content-->
-                  </div>
-                </div>
-                <!-- /Modal 사전기업설명회 추가 -->
-              </div>
               
               <hr class="my-5" />
             </div>

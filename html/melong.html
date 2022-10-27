@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+        @font-face {
+        font-family: 'PyeongChangPeace-Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+        font-weight: 300;
+        font-style: normal;
+        }       
+        body,button{
+            font-family: 'PyeongChangPeace-Light';
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="h1">아래 버튼을 클릭하면 이 텍스트의 색깔과 크기가 변해요!</h1>
+    <p>토마토색깔 시러!😛</p>
+    <button onclick="ch()">이 버튼을 클릭!</button>
+
+    <script>
+        function ch(){
+            $("#h1").css("color","Darkorange");
+        }
+    </script>
+</body>
+</html>
